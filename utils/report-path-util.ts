@@ -18,7 +18,7 @@ export async function getLighthouseOutputPaths(folderTimestamp: string, label: s
 }
 
 // Arrange files to their designated folders
-export async function arrangeFiles(outputDir: string){
+export async function arrangeFiles(outputDir: string, screenshotDir: string){
   const jsonDir = path.join(outputDir, 'json');
   const htmlDir = path.join(outputDir, 'html');
 
@@ -31,6 +31,7 @@ export async function arrangeFiles(outputDir: string){
   // Look for a single .report.json and .report.html
   const jsonFile = files.find(f => f.endsWith('.report.json'));
   const htmlFile = files.find(f => f.endsWith('.report.html'));
+  const screenshotFile = files.find(f => f.endsWith('.png'));
 
   if (jsonFile) {
     fs.renameSync(
@@ -43,6 +44,13 @@ export async function arrangeFiles(outputDir: string){
     fs.renameSync(
       path.join(outputDir, htmlFile),
       path.join(htmlDir, htmlFile)
+    );
+  }
+
+  if (screenshotFile) {
+    fs.renameSync(
+      path.join(outputDir, screenshotFile),
+      path.join(screenshotDir, screenshotFile)
     );
   }
 }
