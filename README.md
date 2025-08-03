@@ -1,49 +1,53 @@
-# PageSpeed Playwright Automation
+# Lighthouse Playwright TypeScript Automation
 
-Automates [Google PageSpeed Insights](https://pagespeed.web.dev/) using **Playwright** with **TypeScript**. This utility extracts performance scores, timestamps, screenshots, and result links for multiple URLs in both normal and incognito browser modes. Results can be appended to an Excel template or saved into organized folders for reporting.
+Automates [Google Lighthouse](https://github.com/GoogleChrome/lighthouse) using **Playwright** with **TypeScript**. This utility extracts performance scores, timestamps, screenshots, and result links for multiple URLs in both normal and incognito browser modes. Results can be appended to an Excel template and saved into organized folders for reporting and visualization.
 
 ---
 
 ## 📌 Features
 
-- 🔁 Analyze multiple pages in one run
+- 🔁 Analyze single or multiple pages in one run
 - 🧭 Supports normal and incognito browser contexts
 - 📊 Extracts:
-  - Performance score (mobile & desktop)
+  - Lighthouse performance score (Mobile/Desktop)
   - Result date and time
-  - First diagnostic section (screenshot)
-  - Final result link
+  - First diagnostic block (screenshot capture)
+  - Generated report links (HTML/JSON)
 - 📁 Save results to:
   - Excel file (via `exceljs`)
-  - Screenshot folders
-  - Configurable template paths
+  - Structured folders with screenshots and reports
+  - Configurable paths and filenames
 - 🔧 Fully scriptable — no test runner needed
 
 ---
 
 ## 🧰 Tools & Technologies
 
-- [Playwright](https://playwright.dev/) (with TypeScript)
-- `exceljs` – for Excel handling
-- `fs`, `path`, `dayjs` – for file and time operations
+- [Lighthouse](https://github.com/GoogleChrome/lighthouse) – performance audits
+- [Playwright](https://playwright.dev/) – browser automation
+- `exceljs` – Excel reporting
+- `fs`, `path`, `dayjs` – file and time utilities
 - Optional:
-  - `inquirer` or `yargs` – for CLI options
-  - `allure-playwright` – for report integration
-  - `dotenv` – for config values
+  - `inquirer` or `yargs` – CLI interactions
+  - `allure-playwright` – for enhanced reporting
+  - `dotenv` – environment-based config values
 
 ---
 
-## 📁 Folder Structure (Simplified)
+## 📁 Folder Structure
 
 ```bash
-PageSpeedInsight-Automation/
-├── config/                  # Config files (e.g., URLs, settings)
-├── data/                    # Excel templates
-├── modules/                 # Core logic modules (no POM)
-│   ├── locators/            # Element selectors
-│   └── page-speed-runner.ts
-├── reports/                 # Screenshots, output Excel, etc.
-├── scripts/                 # Main script entry points (e.g., run-all.ts)
-├── utils/                   # Helpers: Excel writer, logger, etc.
-├── package.json
-└── tsconfig.json
+LIGHTHOUSE-PLAYWRIGHT-TYPESCRIPT-AUTOMATION/
+├── config/             # Configuration files for Lighthouse.
+├── data/               # Stores urls test data.
+├── reports/            # Location where test reports (e.g., Lighthouse results) are generated.
+└── lighthouse-08-03-2025-09-59-21-AM/    # A timestamped directory for a specific Lighthouse report.
+    ├── html/                             # Contains the HTML version of the Lighthouse report.
+    ├── json/                             # Contains the raw JSON data of the Lighthouse report.
+    ├── screenshots/                      # Stores screenshots captured during the Lighthouse analysis.
+    └── lighthouse-simplified-data.txt    # A simplified text file summary of the Lighthouse results.
+├── scripts/            # Houses main script runners for Lighthouse (e.g., Run all or single lighthouse).
+├── utils/              # A collection of utility functions and helper files used throughout the project.
+├── README.md           # Documentation file for the project (e.g., How to run single or multiple links, etc.).
+└── tsconfig.json       # The configuration file for the TypeScript compiler.
+```

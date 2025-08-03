@@ -1,5 +1,9 @@
-export const TARGET_URL = 'https://www.cheqsystems.com/';
+import testUrl from '@data/test-url.json';
 
+// URL to test in Lighthouse
+export const TEST_URL = testUrl.SingleLighthouse.url;
+
+// Folder Format Timestamp
 export const folderTimestamp = new Date().toLocaleString('en-US', {
   year: 'numeric',
   month: '2-digit',
@@ -14,7 +18,8 @@ export const folderTimestamp = new Date().toLocaleString('en-US', {
   .replace('--', '-')
   .toUpperCase();
 
-export function formatFetchTimestamp(fetchTime: string): string {
+// Report Format Timestamp
+export function reportTimestamp(fetchTime: string): string {
   return new Date(fetchTime).toLocaleString('en-US', {
     year: 'numeric',
     month: 'short',
@@ -26,8 +31,7 @@ export function formatFetchTimestamp(fetchTime: string): string {
   });
 }
 
-// config/lighthouse-options.ts or utils/lighthouse-options.ts
-
+// Lighthouse Chrome Flags
 export function getChromeFlags(isIncognito: boolean): string {
   return [
     '--headless',
@@ -35,6 +39,7 @@ export function getChromeFlags(isIncognito: boolean): string {
   ].filter(Boolean).join(' ');
 }
 
+// Lighthouse Device Preset
 export function getLighthousePreset(device: 'Mobile' | 'Desktop'): string {
   return device === 'Desktop' ? '--preset=desktop' : '';
 }
