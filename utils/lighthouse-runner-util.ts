@@ -4,7 +4,7 @@ import { execSync } from 'child_process';
 import { arrangeFiles, getLighthouseOutputPaths } from '@utils/report-path-util';
 
 import { getChromeFlags, getLighthousePreset } from '@config/lighthouse.config';
-import { TARGET_URL, folderTimestamp, formatFetchTimestamp } from '@config/lighthouse.config';
+import { TEST_URL, folderTimestamp, reportTimestamp } from '@config/lighthouse.config';
 
 export const runLighthouse = async (device: 'Mobile' | 'Desktop', isIncognito: boolean) => {
   const modeLabel = isIncognito ? 'Incognito' : 'Normal';
@@ -16,9 +16,9 @@ export const runLighthouse = async (device: 'Mobile' | 'Desktop', isIncognito: b
   const preset = getLighthousePreset(device);
 
   try {
-    console.log(`\n🚀 Running Lighthouse [${label}] on ${TARGET_URL}`);
+    console.log(`\n🚀 Running Lighthouse [${label}] on ${TEST_URL}`);
 
-    execSync(`npx lighthouse ${TARGET_URL} \
+    execSync(`npx lighthouse ${TEST_URL} \
       --output json \
       --output html \
       --output-path "${reportPath}" \
@@ -36,16 +36,16 @@ export const runLighthouse = async (device: 'Mobile' | 'Desktop', isIncognito: b
     const report = JSON.parse(fs.readFileSync(jsonReportPath, 'utf8'));
     const performanceScore = Math.round(report.categories.performance.score * 100);
 
-    const logTimestamp = formatFetchTimestamp(report.fetchTime);
+    const logTimestamp = reportTimestamp(report.fetchTime);
 
     console.log('\n📋 Report Summary');
     console.log('======================');
-    console.log(`URL: ${TARGET_URL}`);
+    console.log(`URL: ${TEST_URL}`);
     console.log(`Mode: ${label}`);
     console.log(`Date & Time: ${logTimestamp}`);
     console.log(`Performance Score: ${performanceScore}`);
 
-    fs.appendFileSync(logPath, `\n[${folderTimestamp}] ${TARGET_URL} - ${label} - Score: ${performanceScore}, Time: ${logTimestamp}`);
+    fs.appendFileSync(logPath, `\n[${folderTimestamp}] ${TEST_URL} - ${label} - Score: ${performanceScore}, Time: ${logTimestamp}`);
     
     arrangeFiles(outputDir);
 

@@ -1,0 +1,15 @@
+{
+  "SingleLighthouse": {
+    "url": "https://www.google.com/"
+  },
+  "AllLighthouse": {
+    "firstUrl": "https://doodles.google/",
+    "secondUrl": "https://doodles.google/search/",
+    "thirdUrl": "https://doodles.google/creating-a-doodle/",
+    "fourthUrl": "https://doodles.google/about/",
+    "fifthUrl": "https://about.google/",
+    "sixthUrl": "https://about.google/products/",
+    "seventhUrl": "https://policies.google.com/privacy",
+    "eighthUrl": "https://policies.google.com/terms"
+  }
+}
