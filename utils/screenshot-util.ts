@@ -27,27 +27,30 @@ export async function screenshotDiagnosticsBlock(
   diagnosticsAuditTitleTxt: string,
   diagnosticsAuditDisplayTxt: string,
   redirectTxt: string,
-  redirectLinkTxt: string }> {
+  redirectLinkTxt: string,
+  screenshotPath: string,
+ }> {
     
   let diagnosticsAuditTitleTxt: string = '';
   let diagnosticsAuditDisplayTxt: string = '';
   let redirectTxt: string = '';
   let redirectLinkTxt: string = '';
+  let screenshotPath: string = '';
 
- currentOutputDir = outputDir;
- currentHtmlReportPath = htmlReportPath; 
- currentLabel = label; 
- currentUrl = url;
- currentDevice = device;
- currentIsIncognito = isIncognito;
- currentScreenshotOption = screenshotOption;
+  currentOutputDir = outputDir;
+  currentHtmlReportPath = htmlReportPath; 
+  currentLabel = label; 
+  currentUrl = url;
+  currentDevice = device;
+  currentIsIncognito = isIncognito;
+  currentScreenshotOption = screenshotOption;
 
   try {
     const screenshotDir = path.join(outputDir, 'screenshot');
     fs.mkdirSync(screenshotDir, { recursive: true });
     
     const screenshotFile = `diagnostics-${sanitizeUrl(url)}-${label}.png`
-    const screenshotPath = path.join(screenshotDir, screenshotFile);
+    screenshotPath = path.join(screenshotDir, screenshotFile);
 
     const browser = await chromium.launch({ headless: true });
     const page = await browser.newPage();
@@ -107,7 +110,8 @@ export async function screenshotDiagnosticsBlock(
       await diagnosticsBlock.screenshot({ path: screenshotPath });
       console.log(`\n📸 Screenshot saved: ${screenshotPath}`);
       
-    } else if(diagnosticsBlock) {
+    } else if(!shouldTakeScreenshot(device, isIncognito, screenshotOption)) {
+      screenshotPath = "skipped";
       console.log(`\n📷 Screenshot skipped for [${label}] on ${url}`);
       
     } else {
@@ -129,5 +133,5 @@ export async function screenshotDiagnosticsBlock(
       screenshotOption
     );
   }
-  return { diagnosticsAuditTitleTxt, diagnosticsAuditDisplayTxt, redirectTxt, redirectLinkTxt };
+  return { diagnosticsAuditTitleTxt, diagnosticsAuditDisplayTxt, redirectTxt, redirectLinkTxt, screenshotPath };
 }

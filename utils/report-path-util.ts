@@ -1,12 +1,16 @@
 import path from 'path';
 import fs from 'fs';
 
+export async function getLighthouseOutputPaths(folderTimestamp: string): Promise<string> {
+
+  return path.join(__dirname, '..', 'reports', `lighthouse-${folderTimestamp}`);
+}
+
 /**
- * Creates and returns all output paths for a Lighthouse report.
+ * Creates and returns .json, .html, and .txt output paths for a Lighthouse report.
  * Automatically creates the directory.
  */
-export async function getLighthouseOutputPaths(folderTimestamp: string, label: string, url: string): Promise<{outputDir: string, reportPath: string, logPath: string}> {
-  const outputDir = path.join(__dirname, '..', 'reports', `lighthouse-${folderTimestamp}`);
+export async function getLighthouseOutputFilePaths(label: string, url: string, outputDir: string): Promise<{reportPath: string, logPath: string}> {
   const sanitized = sanitizeUrl(url);
   const reportPath = path.join(outputDir, `${sanitized}-${label}`);
   const logPath = path.join(outputDir, 'lighthouse-simplified-data.txt');
@@ -14,8 +18,7 @@ export async function getLighthouseOutputPaths(folderTimestamp: string, label: s
   // Ensure directory exists
   fs.mkdirSync(outputDir, { recursive: true });
   
-  
-  return { outputDir, reportPath, logPath };
+  return { reportPath, logPath };
 }
 
 // raw link: https://www.youtube.com/watch?v=HLdPwUrtGH0')
