@@ -5,9 +5,10 @@ import fs from 'fs';
  * Creates and returns all output paths for a Lighthouse report.
  * Automatically creates the directory.
  */
-export async function getLighthouseOutputPaths(folderTimestamp: string, label: string): Promise<{outputDir: string, reportPath: string, logPath: string}> {
+export async function getLighthouseOutputPaths(folderTimestamp: string, label: string, url: string): Promise<{outputDir: string, reportPath: string, logPath: string}> {
   const outputDir = path.join(__dirname, '..', 'reports', `lighthouse-${folderTimestamp}`);
-  const reportPath = path.join(outputDir, `lighthouse-${label}`);
+  const sanitized = sanitizeUrl(url);
+  const reportPath = path.join(outputDir, `${sanitized}-${label}`);
   const logPath = path.join(outputDir, 'lighthouse-simplified-data.txt');
   
   // Ensure directory exists
@@ -17,8 +18,18 @@ export async function getLighthouseOutputPaths(folderTimestamp: string, label: s
   return { outputDir, reportPath, logPath };
 }
 
+// raw link: https://www.youtube.com/watch?v=HLdPwUrtGH0')
+// output link "www_youtube_com_watch_v_HLdPwUrtGH0"
+export function sanitizeUrl(url: string): string {
+  return url
+    .replace(/^https?:\/\//, '')     // remove protocol
+    .replace(/[\/:?&=.]+/g, '_')     // replace symbols (added dot `.` here too)
+    .replace(/[^a-zA-Z0-9_-]/g, ''); // remove anything else
+}
+
+
 // Arrange files to their designated folders
-export async function arrangeFiles(outputDir: string, screenshotDir: string){
+export async function arrangeFiles(outputDir: string){
   const jsonDir = path.join(outputDir, 'json');
   const htmlDir = path.join(outputDir, 'html');
 
@@ -28,29 +39,16 @@ export async function arrangeFiles(outputDir: string, screenshotDir: string){
 
   const files = fs.readdirSync(outputDir);
 
-  // Look for a single .report.json and .report.html
-  const jsonFile = files.find(f => f.endsWith('.report.json'));
-  const htmlFile = files.find(f => f.endsWith('.report.html'));
-  const screenshotFile = files.find(f => f.endsWith('.png'));
+  // Look for .report.json, and .report.html then move to designated folder
+   files.forEach(file => {
+    const fullPath = path.join(outputDir, file);
 
-  if (jsonFile) {
-    fs.renameSync(
-      path.join(outputDir, jsonFile),
-      path.join(jsonDir, jsonFile)
-    );
-  }
+    if (file.endsWith('.report.json')) {
+      fs.renameSync(fullPath, path.join(jsonDir, file));
 
-  if (htmlFile) {
-    fs.renameSync(
-      path.join(outputDir, htmlFile),
-      path.join(htmlDir, htmlFile)
-    );
-  }
+    } else if (file.endsWith('.report.html')) {
+      fs.renameSync(fullPath, path.join(htmlDir, file));
 
-  if (screenshotFile) {
-    fs.renameSync(
-      path.join(outputDir, screenshotFile),
-      path.join(screenshotDir, screenshotFile)
-    );
-  }
+    }
+  });
 }

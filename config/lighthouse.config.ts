@@ -1,7 +1,7 @@
-import testUrl from '@data/test-url.json';
+import testUrls from '@data/test-url.json';
 
-// URL to test in Lighthouse
-export const TEST_URL = testUrl.SingleLighthouse.url;
+export const SINGLE_TEST_URL = testUrls.SingleLighthouse.url;
+export const ALL_TEST_URLS = Object.values(testUrls.AllLighthouse);
 
 // Folder Format Timestamp
 export const folderTimestamp = new Date().toLocaleString('en-US', {
@@ -34,7 +34,7 @@ export function reportTimestamp(fetchTime: string): string {
 // Lighthouse Chrome Flags
 export function getChromeFlags(isIncognito: boolean): string {
   return [
-    '--headless',
+    '--headless=new',
     isIncognito ? '--incognito' : ''
   ].filter(Boolean).join(' ');
 }
