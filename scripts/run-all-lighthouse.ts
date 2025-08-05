@@ -30,7 +30,7 @@ const BATCH_SIZE = 4;
 
   // Overall run time tracker
   const startTime = Date.now();
-  console.log(`🕐 OVERALL RUN Started at: ${new Date(startTime).toLocaleString()}`);
+  console.log(`🕐Started at: ${new Date(startTime).toLocaleString()}`);
   
   // Batch run tasks 4 at a time
   for (let i = 0; i < allTasks.length; i += BATCH_SIZE) {
@@ -46,5 +46,5 @@ const BATCH_SIZE = 4;
   const durationSec = (endTime - startTime) / 1000;
   const minutes = Math.floor(durationSec / 60);
   const seconds = (durationSec % 60).toFixed(2);
-  console.log(`⏱️ Duration: ${minutes}m ${seconds}s`);
+  console.log(`🕐Duration: ${minutes}m ${seconds}s`);
 })();
