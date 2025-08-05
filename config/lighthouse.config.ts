@@ -1,6 +1,6 @@
 import testUrls from '@data/test-url.json';
 
-export const SINGLE_TEST_URL = testUrls.SingleLighthouse.url;
+export const SINGLE_TEST_URL: string[] = [testUrls.SingleLighthouse.url];
 export const ALL_TEST_URLS = Object.values(testUrls.AllLighthouse);
 
 // Folder Format Timestamp

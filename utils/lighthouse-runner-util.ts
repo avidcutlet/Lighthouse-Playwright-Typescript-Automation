@@ -2,19 +2,11 @@ import fs from 'fs';
 import { execSync } from 'child_process';
 
 import { getChromeFlags, getLighthousePreset } from '@config/lighthouse.config';
-import { folderTimestamp, reportTimestamp } from '@config/lighthouse.config';
+import { reportTimestamp } from '@config/lighthouse.config';
 
-import { arrangeFiles, getLighthouseOutputPaths } from '@utils/report-path-util';
+import { arrangeFiles, getLighthouseOutputFilePaths } from '@utils/report-path-util';
 import { screenshotDiagnosticsBlock } from '@utils/screenshot-util';
 import { performanceScoreRating } from '@utils/performance-score-rating-util';
-
-let currentUrl: string;
-let currentDevice: 'Mobile' | 'Desktop';
-let currentIsIncognito: boolean;
-let currentScreenshotOption: number;
-let currentRunIndex: number;
-let currentTotalRuns: number;
-
 
 export const runLighthouse = async (
   url: string,
@@ -22,19 +14,12 @@ export const runLighthouse = async (
   isIncognito: boolean,
   screenshotOption: number,
   runIndex: number,
-  totalRuns: number
+  totalRuns: number,
+  label: string,
+  outputDir: string,
 ) => {
-  currentUrl = url;
-  currentDevice = device;
-  currentIsIncognito = isIncognito;
-  currentScreenshotOption = screenshotOption;
-  currentRunIndex = runIndex;
-  currentTotalRuns = totalRuns;
 
-  const modeLabel = isIncognito ? 'Incognito' : 'Normal';
-  const label = `${device}-${modeLabel}`;
-
-  const { outputDir, reportPath, logPath } = await getLighthouseOutputPaths(folderTimestamp, label, url);
+  const { reportPath, logPath } = await getLighthouseOutputFilePaths(label, url, outputDir);
 
   const chromeFlags = getChromeFlags(isIncognito);
   const preset = getLighthousePreset(device);
@@ -54,7 +39,7 @@ export const runLighthouse = async (
     );
 
     // Write data to txt file
-    const jsonReportPath = `${reportPath}.report.json`; // Search for json file
+    const jsonReportPath = `${reportPath}.report.json`;
     const report = JSON.parse(fs.readFileSync(jsonReportPath, 'utf8'));
     const performanceScore = Math.round(report.categories.performance.score * 100);
     
@@ -73,10 +58,10 @@ export const runLighthouse = async (
       diagnosticsAuditTitleTxt,
       diagnosticsAuditDisplayTxt,
       redirectTxt,
-      redirectLinkTxt
+      redirectLinkTxt,
+      screenshotPath
     } = await screenshotDiagnosticsBlock(outputDir, htmlReportPath, label, url, device, isIncognito, screenshotOption);
 
-    
     // Write data on text file
     fs.appendFileSync(logPath, `\n[${logTimestamp}] ${url} - ${label}:`+
       `\nScore: ${performanceScore}`+
@@ -84,25 +69,18 @@ export const runLighthouse = async (
       `\nDiagnostics Audit Title Text: ${diagnosticsAuditTitleTxt}` +
       `\nDiagnostics Audit Display Text: ${diagnosticsAuditDisplayTxt}`+
       `\nRedirect Text: ${redirectTxt}`+
-      `\nRedirect Link Text: ${redirectLinkTxt}\n`);
+      `\nRedirect Link Text: ${redirectLinkTxt}`+
+      `\nScreenshot Path: ${screenshotPath}\n`
+    );
 
     // After all report generation
     if (runIndex === totalRuns - 1) {
-      console.log('🧹 Arranging files on last run...');
+      console.log('\n🧹 Arranging files on last run...');
       await arrangeFiles(outputDir);
       console.log(`\n✅ Done. Report saved in: ${outputDir}`);
     }
     
   } catch (err) {
     console.error(`\n❌ Lighthouse failed for ${label}:`, err);
-    console.error(`\n🔧 Trying to rerun lighthouse...`);
-    runLighthouse(
-      currentUrl,
-      currentDevice,
-      currentIsIncognito,
-      currentScreenshotOption,
-      currentRunIndex,
-      currentTotalRuns
-    );
   }
 };

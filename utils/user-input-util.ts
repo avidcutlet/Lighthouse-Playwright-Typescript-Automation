@@ -10,7 +10,6 @@ export async function askScreenshotOption(): Promise<number> {
 
   console.log('\n📸 Select Screenshot Capture Option');
   console.log('Please choose which Lighthouse runs should include screenshots:');
-  console.log('(Reducing screenshots will speed up execution time.)\n');
   console.log(' 1. Mobile - Normal Mode');
   console.log(' 2. Mobile - Incognito Mode');
   console.log(' 3. Desktop - Normal Mode');
