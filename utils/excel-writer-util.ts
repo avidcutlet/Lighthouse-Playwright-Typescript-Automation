@@ -5,7 +5,7 @@ import { pathToFileURL } from 'url';
 import { readFile } from 'fs/promises';
 import { folderTimestamp } from '@config/lighthouse.config';
 
-const TEMPLATE_PATH = path.resolve('template', 'Excel_Template.xlsx');
+const TEMPLATE_PATH = path.resolve('template', 'excel-template.xlsx');
 
 export function prepareExcelCopy(outputDir: string): string {
   if (!fs.existsSync(outputDir)) {
