@@ -26,10 +26,12 @@ export async function askScreenshotOption(): Promise<number> {
       rl.close();
       const choice = parseInt(answer, 10);
       if (isNaN(choice) || choice < 1 || choice > 10) {
-        console.log('\n❌ Invalid choice. Exiting program...');
-        process.exit(1);
+        console.log('\n❌ Invalid choice. Defaulting to 1...');
+        // process.exit(1);
+        resolve(1);
       } else {
-        resolve(choice);
+        console.log('\n❌ Other options are not yet implemented. Defaulting to 1...');
+        resolve(1);
       }
     });
   });
