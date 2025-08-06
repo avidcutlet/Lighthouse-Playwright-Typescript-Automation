@@ -28,7 +28,6 @@ const lighthouseRuns: Promise<void>[] = [];
     for (const isIncognito of modes) {
       const modeLabel = isIncognito ? 'Incognito' : 'Normal';
       const label = `${device}-${modeLabel}`;
-    
 
       let currentIndex = taskIndex++;
 
@@ -39,7 +38,6 @@ const lighthouseRuns: Promise<void>[] = [];
         screenshotOption,
         currentIndex,
         totalTasks,
-        // excelPath,
         label,
         outputDir,
       ));
@@ -49,7 +47,6 @@ const lighthouseRuns: Promise<void>[] = [];
   await Promise.all(lighthouseRuns);
 
   await writeAllToExcel(
-    outputDir,
     path.join(outputDir, 'lighthouse-simplified-data.txt'),
     excelPath
   );

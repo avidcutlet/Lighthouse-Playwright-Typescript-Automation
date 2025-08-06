@@ -1,18 +1,18 @@
-import ExcelJS from 'exceljs';
 import path from 'path';
 import fs from 'fs';
-import { resolve } from 'path'; 
+import ExcelJS from 'exceljs';
+import { pathToFileURL } from 'url';
 import { readFile } from 'fs/promises';
+import { folderTimestamp } from '@config/lighthouse.config';
 
-const TEMPLATE_PATH = path.resolve('template', 'CheQ_Website_Production_PageSpeedInsights_Template_07232025.xlsx');
+const TEMPLATE_PATH = path.resolve('template', 'Excel_Template.xlsx');
 
 export function prepareExcelCopy(outputDir: string): string {
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-  const outputFileName = `CheQ_Website_Insights_${timestamp}.xlsx`;
+  const outputFileName = `Website_Insights_${folderTimestamp}.xlsx`;
   const excelPath = path.join(outputDir, outputFileName);
 
   fs.copyFileSync(TEMPLATE_PATH, excelPath);
@@ -29,6 +29,8 @@ interface LighthouseRunData {
   redirectTxt: string;
   redirectLinkTxt: string;
   screenshotPathTxt: string;
+  htmlReportPathTxt: string;
+  outputReportPathTxt: string;
 }
 
 async function parseTxtLogFile(filePath: string): Promise<LighthouseRunData[]> {
@@ -45,6 +47,8 @@ async function parseTxtLogFile(filePath: string): Promise<LighthouseRunData[]> {
     const redirectTextMatch = lines[5]?.match(/Redirect Text: (.+)/);
     const redirectLinkMatch = lines[6]?.match(/Redirect Link Text: (.+)/);
     const screenshotMatch = lines[7]?.match(/Screenshot Path: (.+)/);
+    const htmlReportPathTxMatch = lines[8]?.match(/Html Report Path: (.+)/);
+    const outputReportPathTxMatch = lines[9]?.match(/Output Report Path: (.+)/);
 
     return {
       logTimestamp: timestampMatch?.[1] ?? '',
@@ -56,6 +60,8 @@ async function parseTxtLogFile(filePath: string): Promise<LighthouseRunData[]> {
       redirectTxt: redirectTextMatch?.[1] ?? '',
       redirectLinkTxt: redirectLinkMatch?.[1] ?? '',
       screenshotPathTxt: screenshotMatch?.[1] ?? '',
+      htmlReportPathTxt: htmlReportPathTxMatch?.[1] ?? '',
+      outputReportPathTxt: outputReportPathTxMatch?.[1] ?? '',
     };
   });
 
@@ -63,7 +69,6 @@ async function parseTxtLogFile(filePath: string): Promise<LighthouseRunData[]> {
 }
 
 export async function writeAllToExcel(
-  outputDir: string,
   txtPath: string,
   excelPath: string
 ) {
@@ -71,7 +76,7 @@ export async function writeAllToExcel(
 
   const workbook = new ExcelJS.Workbook();
   await workbook.xlsx.readFile(excelPath);
-  const worksheet = workbook.worksheets[0];
+  const summarySheet = workbook.worksheets[0];
 
   data.forEach((entry, i) => {
     const label = entry.label;
@@ -94,17 +99,17 @@ export async function writeAllToExcel(
     let row: number | undefined;
     let timelogRow: number | undefined;
     let sheet: number | undefined;
-
+    
     for (const key in urls) {
       if (url.includes(key)) {
         const isMobile = label.includes("Mobile");
         const device = isMobile ? "Mobile" : "Desktop";
-
+        
         row = urls[key][device];
         timelogRow = row - (isMobile ? 2 : 1);
-
+        
         sheet = urls[key]["Sheet"];
-
+        
         break;
       }
     }
@@ -115,11 +120,13 @@ export async function writeAllToExcel(
       row = isMobile ? 8 : 7;
       timelogRow = isMobile ? 6 : 6; // Adjust here if needed
     }
-
     
     // Assign values to the worksheet
-    if (timelogRow! > 0) worksheet.getCell(`${column}${timelogRow}`).value = entry.logTimestamp;
-    worksheet.getCell(`${column}${row}`).value = entry.performanceScore;
+    if (timelogRow! > 0) summarySheet.getCell(`${column}${timelogRow}`).value = entry.logTimestamp;
+    summarySheet.getCell(`${column}${row}`).value = entry.performanceScore;
+    
+    if (!sheet) sheet = 1;
+    const otherSheet = workbook.worksheets[sheet];
     
     if (fs.existsSync(entry.screenshotPathTxt)) {
       const imageId = workbook.addImage({
@@ -127,23 +134,51 @@ export async function writeAllToExcel(
         extension: 'png',
       });
       
-      if (!sheet) sheet = 1;
-      const secondSheet = workbook.worksheets[sheet]; // Access dynamic sheet
+      const secondSheet = otherSheet; // Access dynamic sheet
       secondSheet.addImage(imageId, {
         tl: { col: 2, row: 28 }, // C29 = col: 2 (C), row: 28 (zero-based)
         ext: { width: 921.6, height: 518.4 }, // Adjust size as needed
       });
     }
-  
-    ////////////////////// Other Sheets
-    // worksheet.getCell(`F${row!}`).value = entry.diagnosticsAuditTitleTxt;
-    // worksheet.getCell(`G${row!}`).value = entry.diagnosticsAuditDisplayTxt;
-    // worksheet.getCell(`H${row!}`).value = entry.redirectTxt;
-    // worksheet.getCell(`I${row!}`).value = entry.redirectLinkTxt;
+    
+    // Directly inserting the link is 1-based
+    if (label.includes("Mobile") && label.includes("Normal")){
+      const diagAuditDisplayTxt = entry.diagnosticsAuditDisplayTxt ?
+        `— ${entry.diagnosticsAuditDisplayTxt}` :
+         '';
+         
+      otherSheet.getCell(`C26`).value = `${entry.diagnosticsAuditTitleTxt} ${diagAuditDisplayTxt} `;
+      otherSheet.getCell(`C27`).value = {
+        text: entry.redirectTxt,
+        hyperlink: entry.redirectLinkTxt
+      };
+    }
+    
+    const filePaths: Record<string, { Normal: number, Incognito: number }> = {
+      "Desktop": { Normal: 3, Incognito: 4 },
+      "Mobile": { Normal: 5, Incognito: 6 },
+    };
+    
+    const device = label.includes("Mobile") ? "Mobile" : "Desktop";
+    const mode = label.includes("Normal") ? "Normal" : "Incognito";
 
-    // Insert image only once after writing all data
-    // const imagePath = entry.screenshotPathTxt; // <-- adjust filename dynamically if needed
+    const linkRow = filePaths[device][mode]; 
+
+    const fullPath = path.join(entry.outputReportPathTxt, 'html', entry.htmlReportPathTxt);
   
+    // Check file exists (helps debugging if Excel says it can't open)
+    if (!fs.existsSync(fullPath)) {
+      console.warn('HTML report does not exist:', fullPath);
+    } else {
+      // Convert to a proper file:// URL and ensure forward-slashes + encoding
+      const fileUrl = pathToFileURL(fullPath).toString(); // e.g. "file:///C:/Users/…/html/filename.report.html"
+  
+      // Set Excel cell hyperlink using ExcelJS
+      otherSheet.getCell(`E${linkRow}`).value = {
+        text: `${url} — ${label}`,
+        hyperlink: fileUrl
+      };
+    }
   });
 
   await workbook.xlsx.writeFile(excelPath);
