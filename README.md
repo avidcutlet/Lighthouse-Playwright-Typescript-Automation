@@ -88,7 +88,7 @@ npm run single:lightouse
 
 ### Run Lighthouse for All URLs
 ```bash
-npm run single:lighthouse
+npm run all:lighthouse
 ```
 #### The script will:
 - Run Lighthouse for all the URLs defined in "AllLighthouse" data/test-url.json
