@@ -19,7 +19,7 @@ export const runLighthouse = async (
   outputDir: string,
 ) => {
 
-  const { reportPath, logPath } = await getLighthouseOutputFilePaths(label, url, outputDir);
+  const { reportPath, htmlReportFile, logPath } = await getLighthouseOutputFilePaths(label, url, outputDir);
 
   const chromeFlags = getChromeFlags(isIncognito);
   const preset = getLighthousePreset(device);
@@ -70,7 +70,9 @@ export const runLighthouse = async (
       `\nDiagnostics Audit Display Text: ${diagnosticsAuditDisplayTxt}`+
       `\nRedirect Text: ${redirectTxt}`+
       `\nRedirect Link Text: ${redirectLinkTxt}`+
-      `\nScreenshot Path: ${screenshotPath}\n`
+      `\nScreenshot Path: ${screenshotPath}`+
+      `\nHtml Report Path: ${htmlReportFile}.report.html`+
+      `\nOutput Report Path: ${outputDir}\n`
     );
 
     // After all report generation

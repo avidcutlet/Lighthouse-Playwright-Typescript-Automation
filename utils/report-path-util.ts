@@ -10,15 +10,16 @@ export async function getLighthouseOutputPaths(folderTimestamp: string): Promise
  * Creates and returns .json, .html, and .txt output paths for a Lighthouse report.
  * Automatically creates the directory.
  */
-export async function getLighthouseOutputFilePaths(label: string, url: string, outputDir: string): Promise<{reportPath: string, logPath: string}> {
+export async function getLighthouseOutputFilePaths(label: string, url: string, outputDir: string): Promise<{reportPath: string, htmlReportFile: string, logPath: string}> {
   const sanitized = sanitizeUrl(url);
-  const reportPath = path.join(outputDir, `${sanitized}-${label}`);
+  const htmlReportFile = `${sanitized}-${label}`;
+  const reportPath = path.join(outputDir, htmlReportFile);
   const logPath = path.join(outputDir, 'lighthouse-simplified-data.txt');
   
   // Ensure directory exists
   fs.mkdirSync(outputDir, { recursive: true });
   
-  return { reportPath, logPath };
+  return { reportPath, htmlReportFile, logPath };
 }
 
 // raw link: https://www.youtube.com/watch?v=HLdPwUrtGH0')

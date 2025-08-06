@@ -7,14 +7,6 @@ import { shouldTakeScreenshot } from '@utils/user-input-util';
 
 export type DeviceType = 'Mobile' | 'Desktop';
 
-  let currentOutputDir: string;
-  let currentHtmlReportPath: string; 
-  let currentLabel: string; 
-  let currentUrl: string;
-  let currentDevice: DeviceType;
-  let currentIsIncognito: boolean;
-  let currentScreenshotOption: number;
-
 export async function screenshotDiagnosticsBlock(
   outputDir: string, 
   htmlReportPath: string, 
@@ -36,14 +28,6 @@ export async function screenshotDiagnosticsBlock(
   let redirectTxt: string = '';
   let redirectLinkTxt: string = '';
   let screenshotPath: string = '';
-
-  currentOutputDir = outputDir;
-  currentHtmlReportPath = htmlReportPath; 
-  currentLabel = label; 
-  currentUrl = url;
-  currentDevice = device;
-  currentIsIncognito = isIncognito;
-  currentScreenshotOption = screenshotOption;
 
   try {
     const screenshotDir = path.join(outputDir, 'screenshot');
@@ -94,11 +78,11 @@ export async function screenshotDiagnosticsBlock(
       diagnosticsAuditDisplayTxt = tempText.trim();
 
     } else {
-      diagnosticsAuditDisplayTxt = '[No diagnostic details shown]';
+      diagnosticsAuditDisplayTxt = '';
     }
     
     // Get redirects
-    const redirect = await page.waitForSelector(`xpath=//div[@class='lh-audit-group lh-audit-group--diagnostics']/child::div[2]/descendant::a[1]`, {
+    const redirect = await page.waitForSelector(`xpath=//div[@class='lh-audit-group lh-audit-group--diagnostics']/child::div[2]/descendant::a[contains(text(), 'Learn')]`, {
       timeout: timer,
     });
     if (redirect) {
@@ -122,16 +106,7 @@ export async function screenshotDiagnosticsBlock(
     
   } catch (error) {
     console.error("\n⚠️Screenshot error!", error);
-    console.error(`\n🔧 Trying to rerun screenshot...`);
-    screenshotDiagnosticsBlock(
-      outputDir, 
-      htmlReportPath, 
-      label, 
-      url,
-      device,
-      isIncognito,
-      screenshotOption
-    );
+
   }
   return { diagnosticsAuditTitleTxt, diagnosticsAuditDisplayTxt, redirectTxt, redirectLinkTxt, screenshotPath };
 }
