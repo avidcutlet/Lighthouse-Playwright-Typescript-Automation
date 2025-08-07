@@ -1,11 +1,10 @@
 import path from 'path';
 import fs from 'fs';
 import ExcelJS from 'exceljs';
-import { pathToFileURL } from 'url';
 import { readFile } from 'fs/promises';
-import { folderTimestamp } from '@config/lighthouse.config';
-
-const TEMPLATE_PATH = path.resolve('template', 'excel-template.xlsx');
+import { pathToFileURL } from 'url';
+import { imageSize } from 'image-size';
+import { folderTimestamp, EXCEL_TEMPLATE_PATH } from '@config/lighthouse.config';
 
 export function prepareExcelCopy(outputDir: string): string {
   if (!fs.existsSync(outputDir)) {
@@ -15,7 +14,7 @@ export function prepareExcelCopy(outputDir: string): string {
   const outputFileName = `Website_Insights_${folderTimestamp}.xlsx`;
   const excelPath = path.join(outputDir, outputFileName);
 
-  fs.copyFileSync(TEMPLATE_PATH, excelPath);
+  fs.copyFileSync(EXCEL_TEMPLATE_PATH, excelPath);
   return excelPath;
 }
 
@@ -134,10 +133,20 @@ export async function writeAllToExcel(
         extension: 'png',
       });
       
-      const secondSheet = otherSheet; // Access dynamic sheet
-      secondSheet.addImage(imageId, {
+      // Screenshot size
+      const imageBuffer = fs.readFileSync(entry.screenshotPathTxt); // returns Buffer
+      const dimensions = imageSize(imageBuffer); // returns { width, height }
+      if (!dimensions.width || !dimensions.height) throw new Error("Invalid image");
+
+      // Desired image width in pixels
+      const targetWidth = 935;
+      const scale = targetWidth / dimensions.width;
+      const scaledHeight = dimensions.height * scale;
+
+      // Insert screenshot to designated sheet
+      otherSheet.addImage(imageId, {
         tl: { col: 2, row: 28 }, // C29 = col: 2 (C), row: 28 (zero-based)
-        ext: { width: 921.6, height: 518.4 }, // Adjust size as needed
+        ext: { width: targetWidth, height: scaledHeight },
       });
     }
     
