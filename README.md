@@ -9,8 +9,6 @@
 - [Configuration](#configuration)
 - [Excel Reporting](#excel-reporting)
 - [Screenshots and Diagnostics](#screenshots-and-diagnostics)
-- [Utilities](#utilities)
-- [Future Enhancements](#future-enhancements)
 
 ## Introduction
 This is an automation framework using **Playwright** with **TypeScript** to run **Google Lighthouse** performance audits.  
@@ -79,10 +77,10 @@ LIGHTHOUSE-PLAYWRIGHT-TYPESCRIPT-AUTOMATION/
 ## Running Scripts
 ### Run Lighthouse for a Single URL
 ```bash
-npm run single:lightouse
+npm run single:lighthouse
 ```
 #### The script will:
-- Run Lighthouse for the URL defined in "SingleLighthouse" data/test-url.json
+- Run Lighthouse for the URL defined in "SingleLighthouse" — data/test-url.json
 - Save reports and screenshots in the reports/ folder
 - Append results to Excel
 
@@ -91,7 +89,7 @@ npm run single:lightouse
 npm run all:lighthouse
 ```
 #### The script will:
-- Run Lighthouse for all the URLs defined in "AllLighthouse" data/test-url.json
+- Run Lighthouse for all the URLs defined in "AllLighthouse" — data/test-url.json
 - Save reports and screenshots in the reports/ folder
 - Append results to Excel
 
