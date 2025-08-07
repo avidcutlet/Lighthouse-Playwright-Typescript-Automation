@@ -1,7 +1,13 @@
+import path from 'path';
 import testUrls from '@data/test-url.json';
 
 export const SINGLE_TEST_URL: string[] = [testUrls.SingleLighthouse.url];
 export const ALL_TEST_URLS = Object.values(testUrls.AllLighthouse);
+
+const excelOutputName = 'excel-template.xlsx'
+export const EXCEL_TEMPLATE_PATH = path.resolve('template', excelOutputName);
+
+export const TEXT_REPORT_NAME = 'lighthouse-simplified-data.txt';
 
 // Folder Format Timestamp
 export const folderTimestamp = new Date().toLocaleString('en-US', {

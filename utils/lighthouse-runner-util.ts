@@ -7,6 +7,7 @@ import { reportTimestamp } from '@config/lighthouse.config';
 import { arrangeFiles, getLighthouseOutputFilePaths } from '@utils/report-path-util';
 import { screenshotDiagnosticsBlock } from '@utils/screenshot-util';
 import { performanceScoreRating } from '@utils/performance-score-rating-util';
+import { textWriterUtil } from '@utils/text-writer-util';
 
 export const runLighthouse = async (
   url: string,
@@ -63,16 +64,19 @@ export const runLighthouse = async (
     } = await screenshotDiagnosticsBlock(outputDir, htmlReportPath, label, url, device, isIncognito, screenshotOption);
 
     // Write data on text file
-    fs.appendFileSync(logPath, `\n[${logTimestamp}] ${url} - ${label}:`+
-      `\nScore: ${performanceScore}`+
-      `\nTime: ${logTimestamp}`+
-      `\nDiagnostics Audit Title Text: ${diagnosticsAuditTitleTxt}` +
-      `\nDiagnostics Audit Display Text: ${diagnosticsAuditDisplayTxt}`+
-      `\nRedirect Text: ${redirectTxt}`+
-      `\nRedirect Link Text: ${redirectLinkTxt}`+
-      `\nScreenshot Path: ${screenshotPath}`+
-      `\nHtml Report Path: ${htmlReportFile}.report.html`+
-      `\nOutput Report Path: ${outputDir}\n`
+    textWriterUtil(
+      logPath,
+      logTimestamp,
+      url,
+      label,
+      performanceScore,
+      diagnosticsAuditTitleTxt,
+      diagnosticsAuditDisplayTxt,
+      redirectTxt,
+      redirectLinkTxt,
+      screenshotPath,
+      htmlReportFile,
+      outputDir
     );
 
     // After all report generation
