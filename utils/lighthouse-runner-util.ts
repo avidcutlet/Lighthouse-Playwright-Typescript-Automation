@@ -46,21 +46,12 @@ export const runLighthouse = async (
     
     const logTimestamp = reportTimestamp(report.fetchTime);
     
-    console.log('\n📋 Report Summary');
-    console.log('======================');
-    console.log(`URL: ${url}`);
-    console.log(`Mode: ${label}`);
-    console.log(`Date & Time: ${logTimestamp}`);
-    console.log(`Performance Score: ${performanceScore}`);
-    console.log(`Rating: ${performanceScoreRating(performanceScore)}`);
+    // console.log('📋 Report Rating: ${performanceScoreRating(performanceScore)}');
     
     const htmlReportPath = `${reportPath}.report.html`;
     let {
-      diagnosticsAuditTitleTxt,
-      diagnosticsAuditDisplayTxt,
-      redirectTxt,
-      redirectLinkTxt,
-      screenshotPath
+      diagnosticsData,
+      auditsData
     } = await screenshotDiagnosticsBlock(outputDir, htmlReportPath, label, url, device, isIncognito, screenshotOption);
 
     // Write data on text file
@@ -70,11 +61,15 @@ export const runLighthouse = async (
       url,
       label,
       performanceScore,
-      diagnosticsAuditTitleTxt,
-      diagnosticsAuditDisplayTxt,
-      redirectTxt,
-      redirectLinkTxt,
-      screenshotPath,
+      diagnosticsData.diagnosticTitleTxt,
+      diagnosticsData.diagnosticDisplayTxt,
+      diagnosticsData.diagnosticRedirectTxt,
+      diagnosticsData.diagnosticRedirectLinkTxt,
+      diagnosticsData.diagnosticScreenshotPath,
+      auditsData.auditTitleTxt,
+      auditsData.auditRedirectTxt,
+      auditsData.auditRedirectLinkTxt,
+      auditsData.auditScreenshotPath,
       htmlReportFile,
       outputDir
     );
@@ -83,7 +78,7 @@ export const runLighthouse = async (
     if (runIndex === totalRuns - 1) {
       console.log('\n🧹 Arranging files on last run...');
       await arrangeFiles(outputDir);
-      console.log(`\n✅ Done. Report saved in: ${outputDir}`);
+      console.log(`\n✅ Done. Lighthouse report saved in: ${outputDir}`);
     }
     
   } catch (err) {
