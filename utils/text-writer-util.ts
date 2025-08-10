@@ -6,22 +6,30 @@ export function textWriterUtil(
   url: string,
   label: string,
   performanceScore: number,
-  diagnosticsAuditTitleTxt: string,
-  diagnosticsAuditDisplayTxt: string,
-  redirectTxt: string,
-  redirectLinkTxt: string,
-  screenshotPath: string,
+  diagnosticTitleTxt: string,
+  diagnosticDisplayTxt: string,
+  diagnosticRedirectTxt: string,
+  diagnosticRedirectLinkTxt: string,
+  diagnosticScreenshotPath: string,
+  auditTitleTxt: string,
+  auditRedirectTxt: string,
+  auditRedirectLinkTxt: string,
+  auditScreenshotPath: string,
   htmlReportFile: string,
   outputDir: string
 ) {
   fs.appendFileSync(logPath, `\n[${logTimestamp}] ${url} - ${label}:`+
     `\nScore: ${performanceScore}`+
     `\nTime: ${logTimestamp}`+
-    `\nDiagnostics Audit Title Text: ${diagnosticsAuditTitleTxt}` +
-    `\nDiagnostics Audit Display Text: ${diagnosticsAuditDisplayTxt}`+
-    `\nRedirect Text: ${redirectTxt}`+
-    `\nRedirect Link Text: ${redirectLinkTxt}`+
-    `\nScreenshot Path: ${screenshotPath}`+
+    `\nDiagnostic Title Text: ${diagnosticTitleTxt}` +
+    `\nDiagnostic Display Text: ${diagnosticDisplayTxt}`+
+    `\nDiagnostic Redirect Text: ${diagnosticRedirectTxt}`+
+    `\nDiagnostic Redirect Link Text: ${diagnosticRedirectLinkTxt}`+
+    `\nDiagnostic Screenshot Path: ${diagnosticScreenshotPath}`+
+    `\nAudit Title Text: ${auditTitleTxt}` +
+    `\nAudit Redirect Text: ${auditRedirectTxt}`+
+    `\nAudit Redirect Link Text: ${auditRedirectLinkTxt}`+
+    `\nAudit Screenshot Path: ${auditScreenshotPath}`+
     `\nHtml Report Path: ${htmlReportFile}.report.html`+
     `\nOutput Report Path: ${outputDir}\n`
   );
