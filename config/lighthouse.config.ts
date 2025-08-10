@@ -7,7 +7,11 @@ export const ALL_TEST_URLS = Object.values(testUrls.AllLighthouse);
 const excelOutputName = 'excel-template.xlsx'
 export const EXCEL_TEMPLATE_PATH = path.resolve('template', excelOutputName);
 
-export const TEXT_REPORT_NAME = 'lighthouse-simplified-data.txt';
+export const TEXT_REPORT_NAME: string = 'lighthouse-simplified-data.txt';
+
+export const screenshotOption: number = 1;
+
+export const locatorExplicitWait: number = 20000;
 
 // Folder Format Timestamp
 export const folderTimestamp = new Date().toLocaleString('en-US', {
