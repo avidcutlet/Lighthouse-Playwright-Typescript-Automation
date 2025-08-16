@@ -4,8 +4,8 @@ import testUrls from '@data/test-url.json';
 export const SINGLE_TEST_URL: string[] = [testUrls.SingleLighthouse.url];
 export const ALL_TEST_URLS = Object.values(testUrls.AllLighthouse);
 
-const excelOutputName = 'excel-template.xlsx'
-export const EXCEL_TEMPLATE_PATH = path.resolve('template', excelOutputName);
+const excelTemplateFileName = 'excel-template.xlsx'
+export const EXCEL_TEMPLATE_PATH = path.resolve('template', excelTemplateFileName);
 
 export const TEXT_REPORT_NAME: string = 'lighthouse-simplified-data.txt';
 
