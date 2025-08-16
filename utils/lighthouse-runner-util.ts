@@ -9,7 +9,7 @@ import { screenshotDiagnosticsBlock } from '@utils/screenshot-util';
 import { performanceScoreRating } from '@utils/performance-score-rating-util';
 import { textWriterUtil } from '@utils/text-writer-util';
 
-export const runLighthouse = async (
+export async function runLighthouse (
   url: string,
   device: 'Mobile' | 'Desktop',
   isIncognito: boolean,
@@ -18,7 +18,7 @@ export const runLighthouse = async (
   totalRuns: number,
   label: string,
   outputDir: string,
-) => {
+) {
 
   const { reportPath, htmlReportFile, logPath } = await getLighthouseOutputFilePaths(label, url, outputDir);
 
@@ -46,7 +46,7 @@ export const runLighthouse = async (
     
     const logTimestamp = reportTimestamp(report.fetchTime);
     
-    // console.log('📋 Report Rating: ${performanceScoreRating(performanceScore)}');
+    console.log(`📋 Report Rating: ${performanceScoreRating(performanceScore)}`);
     
     const htmlReportPath = `${reportPath}.report.html`;
     let {
