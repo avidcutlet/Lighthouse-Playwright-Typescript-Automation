@@ -21,14 +21,14 @@ function runCommand(command: string, args: string[]): Promise<void> {
   });
 }
 
-export const runLighthouse = async (
+export async function runLighthouse (
   url: string,
   device: 'Mobile' | 'Desktop',
   isIncognito: boolean,
   screenshotOption: number,
   label: string,
   outputDir: string,
-) => {
+) {
 
   const { reportPath, htmlReportFile, logPath } = await getLighthouseOutputFilePaths(label, url, outputDir);
 
