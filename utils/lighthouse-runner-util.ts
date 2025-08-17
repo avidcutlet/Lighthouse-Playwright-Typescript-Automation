@@ -10,7 +10,7 @@ import { textWriterUtil } from '@utils/text-writer-util';
 
 function runCommand(command: string, args: string[]): Promise<void> {
   return new Promise((resolve, reject) => {
-    const child = spawn(command, args, { stdio: 'inherit', shell: true });
+    const child = spawn(command, args, { stdio: 'ignore', shell: true });
     child.on('close', code => {
       if (code === 0) {
         resolve();
