@@ -2,11 +2,12 @@ import path from 'path';
 
 import { ALL_TEST_URLS } from '@config/lighthouse.config';
 import { folderTimestamp } from '@config/lighthouse.config';
+import { screenshotOption } from '@config/lighthouse.config';
 
 import { runLighthouse } from '@utils/lighthouse-runner-util';
-import { screenshotOption } from '@config/lighthouse.config';
 import { prepareExcelCopy, writeAllToExcel } from '@utils/excel-writer-util';
 import { arrangeFiles, getLighthouseOutputPaths } from '@utils/report-path-util';
+import { startEmojiSpinner, clearLine, stopEmojiSpinner } from '@utils/spinner-util';
 
 const devices: ('Mobile' | 'Desktop')[] = ['Mobile', 'Desktop'];
 const modes: boolean[] = [false, true]; // false = normal, true = incognito
@@ -51,6 +52,7 @@ const BATCH_SIZE = 4;
   const startTime = Date.now();
   console.log(`🕐 Started at: ${new Date(startTime).toLocaleString()}\n`);
 
+  startEmojiSpinner(`Lighthouse is running`);
   
   // Batch run tasks 4 at a time
   const allTasksLength = allTasks.length;
@@ -58,21 +60,24 @@ const BATCH_SIZE = 4;
     
     const batch = allTasks.slice(i, i + BATCH_SIZE).map(task => task());
     await Promise.all(batch);
-    console.log(`✅ Batch ${i / BATCH_SIZE + 1}/${Math.ceil(allTasksLength / BATCH_SIZE)} completed`);
+    clearLine();
+    process.stdout.write(`✅ Batch ${i / BATCH_SIZE + 1}/${Math.ceil(allTasksLength / BATCH_SIZE)} completed\n`);
   }
-
+  
   // Arrange after all report generation
   if (currentIndex === totalTasks - 1) {
     console.log('\n🧹 Arranging files on last run...');
     await arrangeFiles(outputDir);
-    console.log(`\n✅ Done. Lighthouse report saved in: ${outputDir}`);
+    const trimmedReportDir = path.relative(__dirname, outputDir);
+    console.log(`\n✅ Lighthouse report saved in: ${trimmedReportDir}`);
   }
-
+  
   await writeAllToExcel(
     path.join(outputDir, 'lighthouse-simplified-data.txt'),
     excelPath
   );
   
+  stopEmojiSpinner();
   console.log('\n🌟 All Lighthouse runs completed.');
   
   // Overall run time tracker
