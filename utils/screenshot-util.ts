@@ -131,7 +131,6 @@ async function getDiagnosticsData(
   // Take screenshot if needed
   if (diagnosticsBlock && shouldTakeScreenshot(device, isIncognito, screenshotOption)) {
     await diagnosticsBlock.screenshot({ path: diagnosticScreenshotPath });
-    console.log(`\n📸 Diagnostic Screenshot saved: ${diagScreenshotFile}`);
 
   } else if (!shouldTakeScreenshot(device, isIncognito, screenshotOption)) {
     diagnosticScreenshotPath = "skipped";
@@ -205,7 +204,6 @@ async function getAuditsData(
   // Take screenshot if needed
   if (auditBlock && shouldTakeScreenshot(device, isIncognito, screenshotOption)) {
     await auditBlock.screenshot({ path: auditScreenshotPath });
-    console.log(`\n📸 Audit Screenshot saved: ${auditScreenshotFile}`);
 
   } else if (!shouldTakeScreenshot(device, isIncognito, screenshotOption)) {
     auditScreenshotPath = "skipped";
