@@ -4,14 +4,15 @@ import ExcelJS from 'exceljs';
 import { readFile } from 'fs/promises';
 import { pathToFileURL } from 'url';
 import { imageSize } from 'image-size';
-import { folderTimestamp, EXCEL_TEMPLATE_PATH } from '@config/lighthouse.config';
+
+import { OUTPUT_FOLDER_TIMESTAMP, EXCEL_TEMPLATE_PATH } from '@config/lighthouse.config';
 
 export function prepareExcelCopy(outputDir: string): string {
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  const outputFileName = `Website_Insights_${folderTimestamp}.xlsx`;
+  const outputFileName = `Website_Insights_${OUTPUT_FOLDER_TIMESTAMP}.xlsx`;
   const excelPath = path.join(outputDir, outputFileName);
 
   fs.copyFileSync(EXCEL_TEMPLATE_PATH, excelPath);
@@ -160,7 +161,7 @@ export async function writeAllToExcel(
 
     const linkRow = filePaths[device][mode]; 
 
-    const fullPath = path.join(entry.outputReportPathTxt, 'html', entry.htmlReportPathTxt);
+    const fullPath = path.join(entry.outputReportPathTxt, `html-${OUTPUT_FOLDER_TIMESTAMP}`, entry.htmlReportPathTxt);
   
     // Check file exists (helps debugging if Excel says it can't open)
     if (!fs.existsSync(fullPath)) {
@@ -171,8 +172,7 @@ export async function writeAllToExcel(
   
       // Set Excel cell hyperlink using ExcelJS
       otherSheet.getCell(`E${linkRow}`).value = {
-        text: `${url} — ${label}`,
-        hyperlink: fileUrl
+        formula: `HYPERLINK(".\\html-${OUTPUT_FOLDER_TIMESTAMP}\\${entry.htmlReportPathTxt}", "${url} — ${label}")`
       };
     }
   });
