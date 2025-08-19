@@ -1,7 +1,6 @@
 import path from 'path';
 
-import { ALL_TEST_URLS } from '@config/lighthouse.config';
-import { folderTimestamp } from '@config/lighthouse.config';
+import { ALL_TEST_URLS, OUTPUT_FOLDER_TIMESTAMP } from '@config/lighthouse.config';
 import { screenshotOption } from '@config/lighthouse.config';
 
 import { runLighthouse } from '@utils/lighthouse-runner-util';
@@ -15,7 +14,7 @@ const modes: boolean[] = [false, true]; // false = normal, true = incognito
 const BATCH_SIZE = 4;
 
 (async () => {
-  const outputDir = await getLighthouseOutputPaths(folderTimestamp);
+  const outputDir = await getLighthouseOutputPaths(`lighthouse-${OUTPUT_FOLDER_TIMESTAMP}`);
   const excelPath = prepareExcelCopy(outputDir);
   // IN PROGRESS...
   // const screenshotOption = await askScreenshotOption();

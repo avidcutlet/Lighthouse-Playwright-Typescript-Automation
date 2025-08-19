@@ -4,6 +4,8 @@ import testUrls from '@data/test-url.json';
 export const SINGLE_TEST_URL: string[] = [testUrls.SingleLighthouse.url];
 export const ALL_TEST_URLS = Object.values(testUrls.AllLighthouse);
 
+export const OUTPUT_FOLDER_TIMESTAMP: string = folderTimestamp();
+
 const excelTemplateFileName = 'excel-template.xlsx'
 export const EXCEL_TEMPLATE_PATH = path.resolve('template', excelTemplateFileName);
 
@@ -14,7 +16,8 @@ export const screenshotOption: number = 1;
 export const locatorExplicitWait: number = 20000;
 
 // Folder Format Timestamp
-export const folderTimestamp = new Date().toLocaleString('en-US', {
+function folderTimestamp(): string {
+  return new Date().toLocaleString('en-US', {
   year: 'numeric',
   month: '2-digit',
   day: '2-digit',
@@ -27,6 +30,7 @@ export const folderTimestamp = new Date().toLocaleString('en-US', {
   .replace(/:/g, '-')
   .replace('--', '-')
   .toUpperCase();
+}
 
 // Report Format Timestamp
 export function reportTimestamp(fetchTime: string): string {
