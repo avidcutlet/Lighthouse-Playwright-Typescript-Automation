@@ -13,6 +13,9 @@ export const TEXT_REPORT_NAME: string = 'lighthouse-simplified-data.txt';
 
 export const screenshotOption: number = 1;
 
+// Number of concurrent Lighthouse instances to run on ALL:LIGHTHOUSE
+export const ALL_LIGHTHOUSE_BATCH_SIZE = 2;
+
 export const locatorExplicitWait: number = 20000;
 
 // Folder Format Timestamp
