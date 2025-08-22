@@ -1,5 +1,8 @@
 name: Scheduled Lighthouse Reports
 
+permissions:
+  contents: write  # allow pushing commits
+
 on:
   schedule:
     - cron: "0 10 * * *"  # run every day at 10:00 AM UTC
@@ -9,7 +12,7 @@ jobs:
   run-lighthouse:
     runs-on: ubuntu-latest
 
-    # ✅ Restrict workflow to only run when the branch is main
+    # Restrict workflow to only run when the branch is main
     if: github.ref == 'refs/heads/main'
 
     steps:
