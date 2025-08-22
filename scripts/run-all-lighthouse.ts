@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { ALL_TEST_URLS, OUTPUT_FOLDER_TIMESTAMP } from '@config/lighthouse.config';
+import { ALL_TEST_URLS, OUTPUT_FOLDER_TIMESTAMP, ALL_LIGHTHOUSE_BATCH_SIZE } from '@config/lighthouse.config';
 import { screenshotOption } from '@config/lighthouse.config';
 
 import { runLighthouse } from '@utils/lighthouse-runner-util';
@@ -10,8 +10,6 @@ import { startEmojiSpinner, clearLine, stopEmojiSpinner } from '@utils/spinner-u
 
 const devices: ('Mobile' | 'Desktop')[] = ['Mobile', 'Desktop'];
 const modes: boolean[] = [false, true]; // false = normal, true = incognito
-
-const BATCH_SIZE = 4;
 
 (async () => {
   const outputDir = await getLighthouseOutputPaths(`lighthouse-${OUTPUT_FOLDER_TIMESTAMP}`);
@@ -55,12 +53,12 @@ const BATCH_SIZE = 4;
   
   // Batch run tasks 4 at a time
   const allTasksLength = allTasks.length;
-  for (let i = 0; i < allTasksLength; i += BATCH_SIZE) {
+  for (let i = 0; i < allTasksLength; i += ALL_LIGHTHOUSE_BATCH_SIZE) {
     
-    const batch = allTasks.slice(i, i + BATCH_SIZE).map(task => task());
+    const batch = allTasks.slice(i, i + ALL_LIGHTHOUSE_BATCH_SIZE).map(task => task());
     await Promise.all(batch);
     clearLine();
-    process.stdout.write(`✅ Batch ${i / BATCH_SIZE + 1}/${Math.ceil(allTasksLength / BATCH_SIZE)} completed\n`);
+    process.stdout.write(`✅ Batch ${i / ALL_LIGHTHOUSE_BATCH_SIZE + 1}/${Math.ceil(allTasksLength / ALL_LIGHTHOUSE_BATCH_SIZE)} completed\n`);
   }
   
   // Arrange after all report generation
