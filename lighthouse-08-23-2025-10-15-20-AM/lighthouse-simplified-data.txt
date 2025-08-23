@@ -1,0 +1,480 @@
+
+[Aug 23, 2025, 10:15:44 AM] https://doodles.google/ - Mobile-Incognito:
+Score: 37
+Time: Aug 23, 2025, 10:15:44 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 9.9 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: doodles_google_-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:15:44 AM] https://doodles.google/ - Desktop-Normal:
+Score: 47
+Time: Aug 23, 2025, 10:15:44 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 2.4 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: doodles_google_-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:15:44 AM] https://doodles.google/ - Mobile-Normal:
+Score: 35
+Time: Aug 23, 2025, 10:15:44 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 8.3 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/diagnostic-doodles_google_-Mobile-Normal.png
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/audit-doodles_google_-Mobile-Normal.png
+Html Report Path: doodles_google_-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:15:44 AM] https://doodles.google/ - Desktop-Incognito:
+Score: 46
+Time: Aug 23, 2025, 10:15:44 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 2.6 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: doodles_google_-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:16:14 AM] https://doodles.google/search/ - Desktop-Normal:
+Score: 98
+Time: Aug 23, 2025, 10:16:14 AM
+Diagnostic Title Text: Reduce initial server response time
+Diagnostic Display Text: Root document took 1,240 ms
+Diagnostic Redirect Text: Learn more about the Time to First Byte metric
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/time-to-first-byte/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: doodles_google_search_-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:16:15 AM] https://doodles.google/search/ - Mobile-Incognito:
+Score: 60
+Time: Aug 23, 2025, 10:16:15 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 2.2 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: doodles_google_search_-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:16:15 AM] https://doodles.google/search/ - Mobile-Normal:
+Score: 49
+Time: Aug 23, 2025, 10:16:15 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 3.0 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/diagnostic-doodles_google_search_-Mobile-Normal.png
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/audit-doodles_google_search_-Mobile-Normal.png
+Html Report Path: doodles_google_search_-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:16:15 AM] https://doodles.google/search/ - Desktop-Incognito:
+Score: 92
+Time: Aug 23, 2025, 10:16:15 AM
+Diagnostic Title Text: Reduce initial server response time
+Diagnostic Display Text: Root document took 3,520 ms
+Diagnostic Redirect Text: Learn more about the Time to First Byte metric
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/time-to-first-byte/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: doodles_google_search_-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:16:40 AM] https://doodles.google/creating-a-doodle/ - Mobile-Normal:
+Score: 44
+Time: Aug 23, 2025, 10:16:40 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 30.0 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/diagnostic-doodles_google_creating-a-doodle_-Mobile-Normal.png
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/audit-doodles_google_creating-a-doodle_-Mobile-Normal.png
+Html Report Path: doodles_google_creating-a-doodle_-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:16:40 AM] https://doodles.google/creating-a-doodle/ - Desktop-Incognito:
+Score: 66
+Time: Aug 23, 2025, 10:16:40 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 8.7 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: doodles_google_creating-a-doodle_-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:16:39 AM] https://doodles.google/creating-a-doodle/ - Desktop-Normal:
+Score: 66
+Time: Aug 23, 2025, 10:16:39 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 4.6 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: doodles_google_creating-a-doodle_-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:16:40 AM] https://doodles.google/creating-a-doodle/ - Mobile-Incognito:
+Score: 44
+Time: Aug 23, 2025, 10:16:40 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 31.3 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: doodles_google_creating-a-doodle_-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:18:49 AM] https://doodles.google/about/ - Mobile-Incognito:
+Score: 70
+Time: Aug 23, 2025, 10:18:49 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 1.6 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: doodles_google_about_-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:18:49 AM] https://doodles.google/about/ - Desktop-Normal:
+Score: 98
+Time: Aug 23, 2025, 10:18:49 AM
+Diagnostic Title Text: Eliminate render-blocking resources
+Diagnostic Display Text: Est savings of 130 ms
+Diagnostic Redirect Text: Learn how to eliminate render-blocking resources
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: doodles_google_about_-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:18:49 AM] https://doodles.google/about/ - Desktop-Incognito:
+Score: 96
+Time: Aug 23, 2025, 10:18:49 AM
+Diagnostic Title Text: Reduce initial server response time
+Diagnostic Display Text: Root document took 1,760 ms
+Diagnostic Redirect Text: Learn more about the Time to First Byte metric
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/time-to-first-byte/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: doodles_google_about_-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:18:49 AM] https://doodles.google/about/ - Mobile-Normal:
+Score: 77
+Time: Aug 23, 2025, 10:18:49 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 1.4 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/diagnostic-doodles_google_about_-Mobile-Normal.png
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/audit-doodles_google_about_-Mobile-Normal.png
+Html Report Path: doodles_google_about_-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:19:13 AM] https://about.google/ - Mobile-Incognito:
+Score: 30
+Time: Aug 23, 2025, 10:19:13 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 55.4 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: about_google_-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:19:13 AM] https://about.google/ - Mobile-Normal:
+Score: 38
+Time: Aug 23, 2025, 10:19:13 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 62.7 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/diagnostic-about_google_-Mobile-Normal.png
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/audit-about_google_-Mobile-Normal.png
+Html Report Path: about_google_-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:19:13 AM] https://about.google/ - Desktop-Normal:
+Score: 52
+Time: Aug 23, 2025, 10:19:13 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 13.4 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: about_google_-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:19:13 AM] https://about.google/ - Desktop-Incognito:
+Score: 53
+Time: Aug 23, 2025, 10:19:13 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 15.4 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: about_google_-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:20:42 AM] https://about.google/products/ - Mobile-Incognito:
+Score: 50
+Time: Aug 23, 2025, 10:20:42 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 39.5 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: about_google_products_-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:20:42 AM] https://about.google/products/ - Desktop-Incognito:
+Score: 63
+Time: Aug 23, 2025, 10:20:42 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 9.3 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: about_google_products_-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:20:42 AM] https://about.google/products/ - Mobile-Normal:
+Score: 54
+Time: Aug 23, 2025, 10:20:42 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 38.2 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/diagnostic-about_google_products_-Mobile-Normal.png
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/audit-about_google_products_-Mobile-Normal.png
+Html Report Path: about_google_products_-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:20:42 AM] https://about.google/products/ - Desktop-Normal:
+Score: 63
+Time: Aug 23, 2025, 10:20:42 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 10.8 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: about_google_products_-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:22:27 AM] https://policies.google.com/privacy - Desktop-Normal:
+Score: 65
+Time: Aug 23, 2025, 10:22:27 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 2.7 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: policies_google_com_privacy-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:22:27 AM] https://policies.google.com/privacy - Mobile-Incognito:
+Score: 34
+Time: Aug 23, 2025, 10:22:27 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 12.1 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: policies_google_com_privacy-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:22:27 AM] https://policies.google.com/privacy - Desktop-Incognito:
+Score: 71
+Time: Aug 23, 2025, 10:22:27 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 3.0 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: policies_google_com_privacy-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:22:27 AM] https://policies.google.com/privacy - Mobile-Normal:
+Score: 44
+Time: Aug 23, 2025, 10:22:27 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 11.3 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/diagnostic-policies_google_com_privacy-Mobile-Normal.png
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/audit-policies_google_com_privacy-Mobile-Normal.png
+Html Report Path: policies_google_com_privacy-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:23:04 AM] https://policies.google.com/terms - Mobile-Normal:
+Score: 67
+Time: Aug 23, 2025, 10:23:04 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 4.0 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/diagnostic-policies_google_com_terms-Mobile-Normal.png
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM/screenshot/audit-policies_google_com_terms-Mobile-Normal.png
+Html Report Path: policies_google_com_terms-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:23:05 AM] https://policies.google.com/terms - Mobile-Incognito:
+Score: 58
+Time: Aug 23, 2025, 10:23:05 AM
+Diagnostic Title Text: Largest Contentful Paint element
+Diagnostic Display Text: 7,610 ms
+Diagnostic Redirect Text: Learn more about the Largest Contentful Paint element
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: policies_google_com_terms-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:23:05 AM] https://policies.google.com/terms - Desktop-Normal:
+Score: 97
+Time: Aug 23, 2025, 10:23:05 AM
+Diagnostic Title Text: Page prevented back/forward cache restoration
+Diagnostic Display Text: 3 failure reasons
+Diagnostic Redirect Text: Learn more about the bfcache
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bf-cache/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: policies_google_com_terms-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
+
+[Aug 23, 2025, 10:23:05 AM] https://policies.google.com/terms - Desktop-Incognito:
+Score: 98
+Time: Aug 23, 2025, 10:23:05 AM
+Diagnostic Title Text: Page prevented back/forward cache restoration
+Diagnostic Display Text: 3 failure reasons
+Diagnostic Redirect Text: Learn more about the bfcache
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bf-cache/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: policies_google_com_terms-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-08-23-2025-10-15-20-AM
