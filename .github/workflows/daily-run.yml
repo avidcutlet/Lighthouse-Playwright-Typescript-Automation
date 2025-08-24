@@ -79,21 +79,20 @@ jobs:
           else
             git checkout -b auto-daily-report
           fi
-          
-          # Copy reports from main workspace
+
+          # Copy all files from main branch's reports folder into current branch's reports folder without overwriting
           git checkout main -- reports/
-          
-          # Stage only reports
-          git add reports/ || true
+          cp -n -r reports/* reports/
+
+          # Stage the reports folder
+          git add reports/
           
           if ! git diff --cached --quiet; then
-            git commit -m "chore(reports): add daily run Lighthouse reports"
+            git commit -m "chore(reports): update Lighthouse reports"
             git push origin auto-daily-report
           else
             echo "No changes in reports — skipping commit."
           fi
-
-
 
       # Upload reports as GitHub artifact (keeps history per run)
       - name: Upload Lighthouse reports artifact
