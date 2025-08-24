@@ -59,7 +59,7 @@ jobs:
         run: |
           for i in 1 2 3; do
             echo "Running Lighthouse attempt $i..."
-            npm run single:lighthouse && break
+            npm run all:lighthouse && break
             sleep 10
           done
 
