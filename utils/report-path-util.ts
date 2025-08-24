@@ -27,7 +27,9 @@ export async function getLighthouseOutputFilePaths(label: string, url: string, o
 // raw link: https://www.youtube.com/watch?v=HLdPwUrtGH0')
 // output link "www_youtube_com_watch_v_HLdPwUrtGH0"
 export function sanitizeUrl(url: string): string {
+  // Remove trailing forward slash
   return url
+    .replace(/\/+$/, '')             // remove trailing slash    
     .replace(/^https?:\/\//, '')     // remove protocol
     .replace(/[\/:?&=.]+/g, '_')     // replace symbols (added dot `.` here too)
     .replace(/[^a-zA-Z0-9_-]/g, ''); // remove anything else

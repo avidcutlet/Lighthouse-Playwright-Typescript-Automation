@@ -6,6 +6,7 @@ import { pathToFileURL } from 'url';
 import { imageSize } from 'image-size';
 
 import { OUTPUT_FOLDER_TIMESTAMP, EXCEL_TEMPLATE_PATH } from '@config/lighthouse.config';
+import { getSubdirectories } from './links-subdirectories-extractor-util';
 
 export function prepareExcelCopy(outputDir: string): string {
   if (!fs.existsSync(outputDir)) {
@@ -90,23 +91,16 @@ export async function writeAllToExcel(
   await workbook.xlsx.readFile(excelPath);
   const summarySheet = workbook.worksheets[0];
 
+  const directories = getSubdirectories() as string[];
+
+  const urls = createUrlMappings(directories);
+
   data.forEach((entry, i) => {
     const label = entry.label;
     const url = entry.url;
 
     // Determine column based on label
     const column = label.includes("Incognito") ? 'E' : 'D';
-
-    // Mapping of URL substrings to row numbers for Desktop and Mobile
-    const urls: Record<string, { Desktop: number; Mobile: number, Sheet: number }> = {
-      "testing-services": { Desktop: 11, Mobile: 12, Sheet: 2 },
-      "about":            { Desktop: 15, Mobile: 16, Sheet: 3 },
-      "news":             { Desktop: 19, Mobile: 20, Sheet: 4 },
-      "careers":          { Desktop: 23, Mobile: 24, Sheet: 5 },
-      "contact":          { Desktop: 27, Mobile: 28, Sheet: 6 },
-      "privacy-policy":   { Desktop: 31, Mobile: 32, Sheet: 7 },
-      "game-testing":     { Desktop: 35, Mobile: 36, Sheet: 8 },
-    };
 
     let row: number | undefined;
     let timelogRow: number | undefined;
@@ -178,6 +172,37 @@ export async function writeAllToExcel(
   });
 
   await workbook.xlsx.writeFile(excelPath);
+}
+
+// Mapping of URL substrings to row numbers for Desktop and Mobile
+interface UrlMapping {
+  Desktop: number;
+  Mobile: number;
+  Sheet: number;
+}
+type UrlMappings = Record<string, UrlMapping>;
+function createUrlMappings(directories: string[]): UrlMappings {
+  const urls: UrlMappings = {}; // Use a simple object to build the map
+
+  // Iterate over each subdirectory and its index in the array.
+  directories.forEach((subdirectory: string, index: number) => {
+    // The pattern for Desktop, Mobile, and Sheet rows is based on a starting
+    // number and an increment for each item.   
+    // Starting values: Desktop = 11, Mobile = 12, Sheet = 2
+    // Increment: +4 for Desktop and Mobile, +1 for Sheet
+    const desktopRow: number = 11 + (index * 4);
+    const mobileRow: number = 12 + (index * 4);
+    const sheetNumber: number = 2 + index;
+
+    // Add the new entry to the urls object.
+    urls[subdirectory] = {
+      Desktop: desktopRow,
+      Mobile: mobileRow,
+      Sheet: sheetNumber
+    };
+  });
+
+  return urls;
 }
 
 // Adding image function

@@ -6,7 +6,7 @@ import { screenshotOption } from '@config/lighthouse.config';
 import { runLighthouse } from '@utils/lighthouse-runner-util';
 import { prepareExcelCopy, writeAllToExcel } from '@utils/excel-writer-util';
 import { arrangeFiles, getLighthouseOutputPaths } from '@utils/report-path-util';
-import { startEmojiSpinner, clearLine, stopEmojiSpinner } from '@utils/spinner-util';
+import { startEmojiSpinner, clearLine, stopEmojiSpinner, updateEmojiSpinner } from '@utils/spinner-util';
 
 const devices: ('Mobile' | 'Desktop')[] = ['Mobile', 'Desktop'];
 const modes: boolean[] = [false, true]; // false = normal, true = incognito
@@ -49,16 +49,19 @@ const modes: boolean[] = [false, true]; // false = normal, true = incognito
   const startTime = Date.now();
   console.log(`🕐 Started at: ${new Date(startTime).toLocaleString()}\n`);
 
-  startEmojiSpinner(`Lighthouse is running`);
+  const allTasksLength = allTasks.length;
+  const allTasksByBatch = Math.ceil(allTasksLength / ALL_LIGHTHOUSE_BATCH_SIZE);
+  startEmojiSpinner(`Lighthouse is running (1/${allTasksByBatch})`);
   
   // Batch run tasks 4 at a time
-  const allTasksLength = allTasks.length;
+  let allLighthouseBatchSize: number;
   for (let i = 0; i < allTasksLength; i += ALL_LIGHTHOUSE_BATCH_SIZE) {
-    
+
     const batch = allTasks.slice(i, i + ALL_LIGHTHOUSE_BATCH_SIZE).map(task => task());
     await Promise.all(batch);
     clearLine();
-    process.stdout.write(`✅ Batch ${i / ALL_LIGHTHOUSE_BATCH_SIZE + 1}/${Math.ceil(allTasksLength / ALL_LIGHTHOUSE_BATCH_SIZE)} completed\n`);
+    process.stdout.write(`Batch ${i / ALL_LIGHTHOUSE_BATCH_SIZE + 1}/${allTasksByBatch} completed ✅\n`);
+    updateEmojiSpinner(`Lighthouse is running (${i / ALL_LIGHTHOUSE_BATCH_SIZE + 2}/${allTasksByBatch})`);
   }
   
   // Arrange after all report generation

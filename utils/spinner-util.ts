@@ -20,6 +20,11 @@ export function startEmojiSpinner(text: string) {
   }, 100);
 }
 
+export function updateEmojiSpinner(text: string) {
+  if (!canUseSpinner) return;
+  currentText = text;
+}
+
 export function clearLine(){
   if (!canUseSpinner) return;
 

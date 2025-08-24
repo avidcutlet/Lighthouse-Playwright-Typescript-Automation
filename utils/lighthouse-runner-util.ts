@@ -15,7 +15,12 @@ function runCommand(command: string, args: string[]): Promise<void> {
       if (code === 0) {
         resolve();
       } else {
-        reject(new Error(`❌ Lighthouse process exited with code ${code}`));
+        reject(new Error(`
+          \n❌ Lighthouse process exited with code ${code}
+          \nThings to check:
+          - Check your internet connection.
+          - Ensure the URL is correct and accessible with no redirection.
+          - Ensure the page isn't using iframe.\n`));
       }
     });
   });
