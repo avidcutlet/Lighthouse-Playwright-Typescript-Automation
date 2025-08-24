@@ -50,7 +50,7 @@ jobs:
             ${{ runner.os }}-playwright-
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
@@ -70,10 +70,12 @@ jobs:
       
       - name: Commit & push reports
         run: |
-          # Fetch remote branches
-          git fetch origin
+          # Fetch remote branch
+          git fetch origin auto-daily-report || true
           
+          # Stage only reports, never package.json or lock
           git add reports/ || true
+          
           if ! git diff --cached --quiet; then
             git commit -m "chore(reports): update Lighthouse reports"
             git pull --rebase origin auto-daily-report || true
@@ -81,6 +83,7 @@ jobs:
           else
             echo "No changes in reports — skipping commit."
           fi
+
 
       # Upload reports as GitHub artifact (keeps history per run)
       - name: Upload Lighthouse reports artifact
