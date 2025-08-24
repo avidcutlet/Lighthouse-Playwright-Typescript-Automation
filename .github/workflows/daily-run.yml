@@ -80,8 +80,6 @@ jobs:
             git checkout -b auto-daily-report
           fi
 
-          # Copy all files from main branch's reports folder into current branch's reports folder without overwriting
-          git checkout main -- reports/
           cp -n -r reports/* reports/
 
           # Stage the reports folder
