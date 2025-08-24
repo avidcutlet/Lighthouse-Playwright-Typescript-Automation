@@ -55,12 +55,8 @@ jobs:
       - name: Update branch with latest changes
         run: git pull origin auto-daily-report --rebase || true
 
-      - name: Copy new reports into branch
-        run: |
-          cp -r reports/* . || echo "No reports to copy"
-
       - name: Commit & push reports
         run: |
-          git add .
+          git add reports/
           git commit -m "chore: add Lighthouse reports [skip ci]" || echo "No changes"
           git push origin auto-daily-report
