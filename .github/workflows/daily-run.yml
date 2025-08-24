@@ -59,7 +59,7 @@ jobs:
         run: |
           for i in 1 2 3; do
             echo "Running Lighthouse attempt $i..."
-            npm run all:lighthouse && break
+            npm run single:lighthouse && break
             sleep 10
           done
 
@@ -70,19 +70,29 @@ jobs:
       
       - name: Commit & push reports
         run: |
-          # Fetch remote branch
+          # Fetch remote branch if it exists
           git fetch origin auto-daily-report || true
           
-          # Stage only reports, never package.json or lock
+          # Switch to auto-daily-report (create if missing)
+          if git rev-parse --verify origin/auto-daily-report >/dev/null 2>&1; then
+            git checkout auto-daily-report
+          else
+            git checkout -b auto-daily-report
+          fi
+          
+          # Copy reports from main workspace
+          git checkout main -- reports/
+          
+          # Stage only reports
           git add reports/ || true
           
           if ! git diff --cached --quiet; then
-            git commit -m "chore(reports): update Lighthouse reports"
-            git pull --rebase origin auto-daily-report || true
+            git commit -m "chore(reports): add daily run Lighthouse reports"
             git push origin auto-daily-report
           else
             echo "No changes in reports — skipping commit."
           fi
+
 
 
       # Upload reports as GitHub artifact (keeps history per run)
