@@ -1,15 +1,15 @@
 {
   "SingleLighthouse": {
-    "url": "https://www.google.com/"
+    "url": "https://www.w3schools.com/spaces/index.php"
   },
   "AllLighthouse": {
-    "firstUrl": "https://doodles.google/",
-    "secondUrl": "https://doodles.google/search/",
-    "thirdUrl": "https://doodles.google/creating-a-doodle/",
-    "fourthUrl": "https://doodles.google/about/",
-    "fifthUrl": "https://about.google/",
-    "sixthUrl": "https://about.google/products/",
-    "seventhUrl": "https://policies.google.com/privacy",
-    "eighthUrl": "https://policies.google.com/terms"
+    "firstUrl": "https://www.w3schools.com/",
+    "secondUrl": "https://www.w3schools.com/programming/index.php",
+    "thirdUrl": "https://www.w3schools.com/spaces/index.php",
+    "fourthUrl": "https://www.w3schools.com/codegame/index.html",
+    "fifthUrl": "https://www.w3schools.com/cybersecurity/index.php",
+    "sixthUrl": "https://www.w3schools.com/accessibility/index.php",
+    "seventhUrl": "https://www.w3schools.com/academy/index.php",  
+    "eighthUrl": "https://campus.w3schools.com/pages/newsletter"
   }
 }
