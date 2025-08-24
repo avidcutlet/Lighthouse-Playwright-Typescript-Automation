@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 0
-          ref: auto-daily-report
+          ref: main
           
       - name: Setup Node.js
         uses: actions/setup-node@v4.1.0
@@ -67,16 +67,19 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
+      
       - name: Commit & push reports
         run: |
-          git add reports/
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
+          # Fetch remote branches
+          git fetch origin
+          
+          git add reports/ || true
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(reports): update Lighthouse reports"
             git pull --rebase origin auto-daily-report || true
-            git commit -m "chore: add Lighthouse reports [skip ci]"
-            git push origin auto-daily-report --quiet
+            git push origin auto-daily-report
+          else
+            echo "No changes in reports — skipping commit."
           fi
 
       # Upload reports as GitHub artifact (keeps history per run)
