@@ -49,9 +49,12 @@ export function reportTimestamp(fetchTime: string): string {
 }
 
 // Lighthouse Chrome Flags
-export function getChromeFlags(isIncognito: boolean): string {
+export function getChromeFlags(isIncognito: boolean, headless: 'new' | 'old' | 'none' = 'new'): string {
+  const headlessFlag = headless === 'new' ? '--headless=new' : headless === 'old' ? '--headless=old' : '';
   return [
-    '--headless=new',
+    headlessFlag,
+    '--no-sandbox',
+    '--disable-dev-shm-usage',
     isIncognito ? '--incognito' : ''
   ].filter(Boolean).join(' ');
 }
