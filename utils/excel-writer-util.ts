@@ -6,7 +6,7 @@ import { pathToFileURL } from 'url';
 import { imageSize } from 'image-size';
 
 import { OUTPUT_FOLDER_TIMESTAMP, EXCEL_TEMPLATE_PATH } from '@config/lighthouse.config';
-import { getSubdirectories } from './links-subdirectories-extractor-util';
+import { getSubdirectories } from '@utils/links-subdirectories-extractor-util';
 
 export function prepareExcelCopy(outputDir: string): string {
   if (!fs.existsSync(outputDir)) {
