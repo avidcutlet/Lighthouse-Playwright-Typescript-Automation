@@ -1,4 +1,4 @@
-# # Lighthouse Playwright TypeScript Automation
+# Lighthouse Playwright TypeScript Automation
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -13,9 +13,9 @@
 - [Future Enhancements](#future-enhancements)
 
 ## Introduction
-This project provides an automation framework built with Playwright and TypeScript to run Google Lighthouse performance audits.
-It can execute audits on single or multiple URLs, extract diagnostics, capture screenshots, and generate detailed Excel reports.
-The framework is designed to be scalable, reusable, and CI/CD-ready, making it easy to integrate performance testing into development and deployment workflows.
+This project is a Playwright and TypeScript automation framework for [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/) performance audits. It's designed to seamlessly integrate performance testing into your development and CI/CD pipelines.
+
+The framework is capable of running Lighthouse audits on single or multiple URLs (up to 8), extracting key performance diagnostics, capturing screenshots, and generating detailed Excel reports. It provides a scalable and reusable solution for ensuring your web applications meet performance standards.
 
 ## Features
 - Run Lighthouse audits in Mobile normal and incognito mode and Desktop normal and incognito mode
@@ -26,7 +26,7 @@ The framework is designed to be scalable, reusable, and CI/CD-ready, making it e
 - Dynamic configuration through `lighthouse.config.ts`
 - Dynamic test links through `test-url.json`
 - Organized folder structure for date- and time-based runs
-- CI/CD with GitHub Actions scheduled runs for automated Lighthouse reporting and storage.
+- CI/CD with GitHub Actions scheduled runs for automated Lighthouse reporting.
 
 ## Installation
 
@@ -108,17 +108,14 @@ npm run all:lighthouse
 - This project includes a GitHub Actions workflow (.github/workflows/daily-run.yml) that automatically runs Lighthouse daily and pushes results to report branches.
 
 ### Accessing Reports
+After forking the repository, use the following `git` commands to access the generated reports. Replace `username` with your GitHub username and the name of the Github repository `your-github-repo.git` that forked the repository.
+
 - Today’s report only (snapshot branch, replaced daily):
 
 ```bash
-git clone --branch all-reports --single-branch https://github.com/avidcutlet/Ligthhouse-Playwright-Typescript-Automation.git
+git clone --branch todays-reports --single-branch https://github.com/username/your-github-repo.git
 ```
 
-- All historical reports (append-only branch):
-
-```bash
-git clone --branch todays-report --single-branch https://github.com/avidcutlet/Ligthhouse-Playwright-Typescript-Automation.git
-```
 - Reports are updated daily at 9:35 AM PHT.
 
 ## Excel Reporting
@@ -145,11 +142,17 @@ git clone --branch todays-report --single-branch https://github.com/avidcutlet/L
 - `report-path-util.ts` → Organizes output directories and filenames.
 - `screenshot-util.ts` → Captures diagnostics and audits.
 
-## Future Enhancements
-- Dynamic URL fetching instead of static data/test-url.json.
-- Smarter screenshot capture (based on best-performing device or user input).
-- Logs for debugging → allowing users to commit errors for review.
-- Screenshot source will be dynamic, based on whichever device score is higher.
-- CI/CD integrations with trend graphs over time.
-- CLI user prompts for screenshot options.
+## Roadmap
+
+### Future Enhancements
+- Dynamic URL fetching (no URL limits) via text file or user input.
+- Smarter screenshot capture (based on device performance or user input).
+- CLI user prompts for a guided experience.
+- Improved logging for debugging and error reporting.
+- Advanced CI/CD integration with historical trend graphs.
 - Option to export results as PDF.
+
+### Pro Features ✨
+- Automated daily and historical reports on a dedicated branch.
+
+Message me on my [LinkedIn profile](https://www.linkedin.com/in/von-webster-saikou) to learn more about our Pro plan and get access to these features.

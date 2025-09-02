@@ -73,60 +73,12 @@ jobs:
         run: |
           mkdir -p /tmp/lighthouse-reports
           cp -r reports/* /tmp/lighthouse-reports/
-      
-      # ----------------------------------
-      # Update all-reports (history)
-      # ----------------------------------
-        
-      - name: Commit & push to all-reports
-        run: |
-          # Fetch remote branch if it exists
-          git fetch origin all-reports || true
-          
-          # Switch to all-reports (create if missing)
-          if git rev-parse --verify origin/all-reports >/dev/null 2>&1; then
-            git checkout all-reports
-          else
-            git checkout --orphan all-reports
-          fi
-
-          # 🧹 Cleanup: remove everything except reports/ and .git
-          # 1. Remove tracked files except reports/
-          git ls-files | grep -v '^reports/' | xargs -r git rm -rf --ignore-unmatch
-
-          # 2. Remove untracked files/folders except reports/
-          # -f = force
-          # -d = recurse into dirs
-          # -x = remove ignored files too
-          # -e reports = exclude reports/
-          git clean -fdx -e reports
-
-          # 3. Remove untracked files/folders except reports/ and .git (safety net)
-          find . -mindepth 1 -maxdepth 1 ! -name ".git" ! -name "reports" -exec rm -rf {} +
-
-          # Ensure reports folder exists in all-reports
-          mkdir -p reports
-          
-          # Copy reports from main into all-reports/reports (append mode)
-          cp -r /tmp/lighthouse-reports/* ./reports/
-
-          # Stage all updates
-          git add -A
-
-          if ! git diff --cached --quiet; then
-            git commit -m "chore(reports): cleanup & update Lighthouse reports"
-            git push -f origin all-reports
-          else
-            echo "No changes for all-reports — skipping commit."
-          fi
 
       # ------------------------------------------
       # Update todays-report (fresh snapshot)
       # ------------------------------------------
       - name: Commit & push to todays-report
         run: |
-          # Go back to main to fetch newest reports
-          git checkout main
           
           git fetch origin todays-report || true
 
