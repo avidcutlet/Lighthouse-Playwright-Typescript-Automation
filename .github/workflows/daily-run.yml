@@ -5,10 +5,10 @@ permissions:
 
 on:
   schedule:
-    # run every day at 10:00 AM PHT
+    # run every sunday at 10:00 AM PHT
     # 2:00 AM UTC = 10:00 AM PHT
     # added 25mins for queue
-    - cron: "35 1 * * *"   
+    - cron: "35 1 * * 0"   
   workflow_dispatch:      # allow manual run
 
 jobs:
