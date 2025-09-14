@@ -1,0 +1,480 @@
+
+[Sep 14, 2025, 10:51:47 AM] https://www.w3schools.com/ - Mobile-Incognito:
+Score: 41
+Time: Sep 14, 2025, 10:51:47 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 5.1 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:51:47 AM] https://www.w3schools.com/ - Mobile-Normal:
+Score: 40
+Time: Sep 14, 2025, 10:51:47 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 5.5 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/diagnostic-www_w3schools_com-Mobile-Normal.png
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/audit-www_w3schools_com-Mobile-Normal.png
+Html Report Path: www_w3schools_com-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:51:47 AM] https://www.w3schools.com/ - Desktop-Normal:
+Score: 99
+Time: Sep 14, 2025, 10:51:47 AM
+Diagnostic Title Text: Preconnect to required origins
+Diagnostic Display Text: Est savings of 80 ms
+Diagnostic Redirect Text: Learn how to preconnect to required origins
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:51:47 AM] https://www.w3schools.com/ - Desktop-Incognito:
+Score: 99
+Time: Sep 14, 2025, 10:51:47 AM
+Diagnostic Title Text: Preconnect to required origins
+Diagnostic Display Text: Est savings of 90 ms
+Diagnostic Redirect Text: Learn how to preconnect to required origins
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:52:22 AM] https://www.w3schools.com/programming/index.php - Mobile-Incognito:
+Score: 33
+Time: Sep 14, 2025, 10:52:22 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 62.7 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_programming_index_php-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:52:22 AM] https://www.w3schools.com/programming/index.php - Mobile-Normal:
+Score: 32
+Time: Sep 14, 2025, 10:52:22 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 58.0 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/diagnostic-www_w3schools_com_programming_index_php-Mobile-Normal.png
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/audit-www_w3schools_com_programming_index_php-Mobile-Normal.png
+Html Report Path: www_w3schools_com_programming_index_php-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:52:22 AM] https://www.w3schools.com/programming/index.php - Desktop-Incognito:
+Score: 60
+Time: Sep 14, 2025, 10:52:22 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 28.1 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_programming_index_php-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:52:21 AM] https://www.w3schools.com/programming/index.php - Desktop-Normal:
+Score: 60
+Time: Sep 14, 2025, 10:52:21 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 43.0 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_programming_index_php-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:55:41 AM] https://www.w3schools.com/spaces/index.php - Mobile-Incognito:
+Score: 57
+Time: Sep 14, 2025, 10:55:41 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 2.2 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_spaces_index_php-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:55:41 AM] https://www.w3schools.com/spaces/index.php - Mobile-Normal:
+Score: 56
+Time: Sep 14, 2025, 10:55:41 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 6.0 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/diagnostic-www_w3schools_com_spaces_index_php-Mobile-Normal.png
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/audit-www_w3schools_com_spaces_index_php-Mobile-Normal.png
+Html Report Path: www_w3schools_com_spaces_index_php-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:55:41 AM] https://www.w3schools.com/spaces/index.php - Desktop-Normal:
+Score: 95
+Time: Sep 14, 2025, 10:55:41 AM
+Diagnostic Title Text: Preconnect to required origins
+Diagnostic Display Text: Est savings of 90 ms
+Diagnostic Redirect Text: Learn how to preconnect to required origins
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_spaces_index_php-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:55:41 AM] https://www.w3schools.com/spaces/index.php - Desktop-Incognito:
+Score: 95
+Time: Sep 14, 2025, 10:55:41 AM
+Diagnostic Title Text: Preconnect to required origins
+Diagnostic Display Text: Est savings of 80 ms
+Diagnostic Redirect Text: Learn how to preconnect to required origins
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_spaces_index_php-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:56:17 AM] https://www.w3schools.com/codegame/index.html - Mobile-Normal:
+Score: 30
+Time: Sep 14, 2025, 10:56:17 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 10.6 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/diagnostic-www_w3schools_com_codegame_index_html-Mobile-Normal.png
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/audit-www_w3schools_com_codegame_index_html-Mobile-Normal.png
+Html Report Path: www_w3schools_com_codegame_index_html-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:56:17 AM] https://www.w3schools.com/codegame/index.html - Desktop-Incognito:
+Score: 70
+Time: Sep 14, 2025, 10:56:17 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 2.4 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_codegame_index_html-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:56:17 AM] https://www.w3schools.com/codegame/index.html - Desktop-Normal:
+Score: 71
+Time: Sep 14, 2025, 10:56:17 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 2.3 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_codegame_index_html-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:56:17 AM] https://www.w3schools.com/codegame/index.html - Mobile-Incognito:
+Score: 34
+Time: Sep 14, 2025, 10:56:17 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 11.8 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_codegame_index_html-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:56:49 AM] https://www.w3schools.com/cybersecurity/index.php - Mobile-Normal:
+Score: 30
+Time: Sep 14, 2025, 10:56:49 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 26.8 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/diagnostic-www_w3schools_com_cybersecurity_index_php-Mobile-Normal.png
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/audit-www_w3schools_com_cybersecurity_index_php-Mobile-Normal.png
+Html Report Path: www_w3schools_com_cybersecurity_index_php-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:56:49 AM] https://www.w3schools.com/cybersecurity/index.php - Mobile-Incognito:
+Score: 28
+Time: Sep 14, 2025, 10:56:49 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 55.6 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_cybersecurity_index_php-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:56:49 AM] https://www.w3schools.com/cybersecurity/index.php - Desktop-Normal:
+Score: 55
+Time: Sep 14, 2025, 10:56:49 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 20.5 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_cybersecurity_index_php-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:56:49 AM] https://www.w3schools.com/cybersecurity/index.php - Desktop-Incognito:
+Score: 56
+Time: Sep 14, 2025, 10:56:49 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 39.6 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_cybersecurity_index_php-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:59:38 AM] https://www.w3schools.com/accessibility/index.php - Mobile-Incognito:
+Score: 33
+Time: Sep 14, 2025, 10:59:38 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 58.9 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_accessibility_index_php-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:59:38 AM] https://www.w3schools.com/accessibility/index.php - Mobile-Normal:
+Score: 28
+Time: Sep 14, 2025, 10:59:38 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 98.9 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/diagnostic-www_w3schools_com_accessibility_index_php-Mobile-Normal.png
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/audit-www_w3schools_com_accessibility_index_php-Mobile-Normal.png
+Html Report Path: www_w3schools_com_accessibility_index_php-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:59:38 AM] https://www.w3schools.com/accessibility/index.php - Desktop-Normal:
+Score: 56
+Time: Sep 14, 2025, 10:59:38 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 25.3 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_accessibility_index_php-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 10:59:38 AM] https://www.w3schools.com/accessibility/index.php - Desktop-Incognito:
+Score: 56
+Time: Sep 14, 2025, 10:59:38 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 22.1 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_accessibility_index_php-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 11:02:25 AM] https://www.w3schools.com/academy/index.php - Mobile-Normal:
+Score: 31
+Time: Sep 14, 2025, 11:02:25 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 7.9 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/diagnostic-www_w3schools_com_academy_index_php-Mobile-Normal.png
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/audit-www_w3schools_com_academy_index_php-Mobile-Normal.png
+Html Report Path: www_w3schools_com_academy_index_php-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 11:02:25 AM] https://www.w3schools.com/academy/index.php - Desktop-Normal:
+Score: 82
+Time: Sep 14, 2025, 11:02:25 AM
+Diagnostic Title Text: Reduce the impact of third-party code
+Diagnostic Display Text: Third-party code blocked the main thread for 300 ms
+Diagnostic Redirect Text: Learn how to minimize third-party impact
+Diagnostic Redirect Link Text: https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_academy_index_php-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 11:02:25 AM] https://www.w3schools.com/academy/index.php - Mobile-Incognito:
+Score: 31
+Time: Sep 14, 2025, 11:02:25 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 7.3 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_academy_index_php-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 11:02:25 AM] https://www.w3schools.com/academy/index.php - Desktop-Incognito:
+Score: 74
+Time: Sep 14, 2025, 11:02:25 AM
+Diagnostic Title Text: Reduce the impact of third-party code
+Diagnostic Display Text: Third-party code blocked the main thread for 360 ms
+Diagnostic Redirect Text: Learn how to minimize third-party impact
+Diagnostic Redirect Link Text: https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Minify CSS
+Audit Redirect Text: Learn how to minify CSS
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/unminified-css/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_w3schools_com_academy_index_php-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 11:03:11 AM] https://campus.w3schools.com/pages/newsletter - Mobile-Incognito:
+Score: 30
+Time: Sep 14, 2025, 11:03:11 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 12.4 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: campus_w3schools_com_pages_newsletter-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 11:03:11 AM] https://campus.w3schools.com/pages/newsletter - Desktop-Incognito:
+Score: 62
+Time: Sep 14, 2025, 11:03:11 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 2.9 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: campus_w3schools_com_pages_newsletter-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 11:03:11 AM] https://campus.w3schools.com/pages/newsletter - Desktop-Normal:
+Score: 63
+Time: Sep 14, 2025, 11:03:11 AM
+Diagnostic Title Text: Reduce JavaScript execution time
+Diagnostic Display Text: 2.8 s
+Diagnostic Redirect Text: Learn how to reduce Javascript execution time
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/bootup-time/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: campus_w3schools_com_pages_newsletter-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
+
+[Sep 14, 2025, 11:03:11 AM] https://campus.w3schools.com/pages/newsletter - Mobile-Normal:
+Score: 26
+Time: Sep 14, 2025, 11:03:11 AM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 16.3 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/diagnostic-campus_w3schools_com_pages_newsletter-Mobile-Normal.png
+Audit Title Text: Eliminate render-blocking resources
+Audit Redirect Text: Learn how to eliminate render-blocking resources
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM/screenshot/audit-campus_w3schools_com_pages_newsletter-Mobile-Normal.png
+Html Report Path: campus_w3schools_com_pages_newsletter-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-09-14-2025-10-51-26-AM
