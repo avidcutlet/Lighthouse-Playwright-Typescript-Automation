@@ -13,7 +13,7 @@
 - [Future Enhancements](#future-enhancements)
 
 ## Introduction
-This project is a Playwright and TypeScript automation framework for [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/) performance audits. It's designed to seamlessly integrate performance testing into your development and CI/CD pipelines.
+This project is a Playwright and TypeScript automation framework for [Lighthouse](https://developer.chrome.com/docs/lighthouse/) performance audits. It's designed to seamlessly integrate performance testing into your development and CI/CD pipelines.
 
 The framework is capable of running Lighthouse audits on single or multiple URLs (up to 8), extracting key performance diagnostics, capturing screenshots, and generating detailed Excel reports. It provides a scalable and reusable solution for ensuring your web applications meet performance standards.
 
@@ -145,14 +145,26 @@ git clone --branch todays-reports --single-branch https://github.com/username/yo
 ## Roadmap
 
 ### Future Enhancements
-- Dynamic URL fetching (no URL limits) via text file or user input.
-- Smarter screenshot capture (based on device performance or user input).
-- CLI user prompts for a guided experience.
-- Improved logging for debugging and error reporting.
-- Advanced CI/CD integration with historical trend graphs.
-- Option to export results as PDF.
+- Support for dynamic URL fetching without limits via text file or user input.
+- Enhanced CI/CD integration with historical trend visualization.
+- Option to export results in PDF format.
+- Highly configurable setup with 90% dynamic configuration options.
+- Scalable dynamic URL handling (supporting more than 8 URLs).
+- Multiple execution modes: Default, Strict, and Retry.
 
 ### Pro Features ✨
+- Intelligent screenshot capture optimized for device performance or user preferences.
+- Interactive CLI prompts for a guided setup experience.
+- Flexible Lighthouse run configurations (Mobile/Desktop, Normal/Incognito, and combined modes).
+- Advanced Excel integration using [xlsx-populate](https://www.npmjs.com/package/@xlsx/xlsx-populate) with macro-based automation.
+- Performance benchmarks matched with Google PageSpeed Insights.
+- Visual report enhancements with bar and pie charts in Excel summaries.
+- Easy sharing with exportable zipped result packages.
+- Automatic summary sheet naming based on source page links.
 - Automated daily and historical reports on a dedicated branch.
+- Extended Lighthouse error handling and support.
+- Advanced logging for improved debugging and error tracing.
+- CI/CD integration with scheduling options for daily, weekly, or custom date-based reports.
+- Codebase aligned with industry best practices.
 
 Message me on my [LinkedIn profile](https://www.linkedin.com/in/von-webster-saikou) to learn more about our Pro plan and get access to these features.
