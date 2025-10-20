@@ -8,7 +8,7 @@ on:
     # run every sunday at 10:00 AM PHT
     # 2:00 AM UTC = 10:00 AM PHT
     # added 25mins for queue
-    - cron: "35 1 * * 0"   
+    - cron: "35 1 1 * *"
   workflow_dispatch:      # allow manual run
 
 jobs:
