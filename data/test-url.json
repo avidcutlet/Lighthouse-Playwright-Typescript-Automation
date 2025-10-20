@@ -1,15 +1,15 @@
 {
   "SingleLighthouse": {
-    "url": "https://www.w3schools.com/spaces/index.php"
+    "url": "https://demowebshop.tricentis.com/wishlist"
   },
   "AllLighthouse": {
-    "firstUrl": "https://www.w3schools.com/",
-    "secondUrl": "https://www.w3schools.com/programming/index.php",
-    "thirdUrl": "https://www.w3schools.com/spaces/index.php",
-    "fourthUrl": "https://www.w3schools.com/codegame/index.html",
-    "fifthUrl": "https://www.w3schools.com/cybersecurity/index.php",
-    "sixthUrl": "https://www.w3schools.com/accessibility/index.php",
-    "seventhUrl": "https://www.w3schools.com/academy/index.php",  
-    "eighthUrl": "https://campus.w3schools.com/pages/newsletter"
+    "firstUrl": "https://demowebshop.tricentis.com/",
+    "secondUrl": "https://demowebshop.tricentis.com/sitemap",
+    "thirdUrl": "https://demowebshop.tricentis.com/shipping-returns",
+    "fourthUrl": "https://demowebshop.tricentis.com/privacy-policy",
+    "fifthUrl": "https://demowebshop.tricentis.com/conditions-of-use",
+    "sixthUrl": "https://demowebshop.tricentis.com/about-us",
+    "seventhUrl": "https://demowebshop.tricentis.com/contactus",  
+    "eighthUrl": "https://demowebshop.tricentis.com/wishlist"
   }
 }
