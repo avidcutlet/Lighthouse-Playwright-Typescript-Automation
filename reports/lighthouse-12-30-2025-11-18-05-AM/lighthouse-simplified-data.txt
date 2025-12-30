@@ -1,0 +1,480 @@
+
+[Dec 30, 2025, 11:18:16 AM] https://demowebshop.tricentis.com/ - Desktop-Incognito:
+Score: 84
+Time: Dec 30, 2025, 11:18:16 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 32 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:18:16 AM] https://demowebshop.tricentis.com/ - Mobile-Incognito:
+Score: 60
+Time: Dec 30, 2025, 11:18:16 AM
+Diagnostic Title Text: Serve images in next-gen formats
+Diagnostic Display Text: Est savings of 430 KiB
+Diagnostic Redirect Text: Learn more about modern image formats
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:18:16 AM] https://demowebshop.tricentis.com/ - Desktop-Normal:
+Score: 83
+Time: Dec 30, 2025, 11:18:16 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 32 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:18:16 AM] https://demowebshop.tricentis.com/ - Mobile-Normal:
+Score: 71
+Time: Dec 30, 2025, 11:18:16 AM
+Diagnostic Title Text: Serve images in next-gen formats
+Diagnostic Display Text: Est savings of 430 KiB
+Diagnostic Redirect Text: Learn more about modern image formats
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/diagnostic-demowebshop_tricentis_com-Mobile-Normal.png
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/audit-demowebshop_tricentis_com-Mobile-Normal.png
+Html Report Path: demowebshop_tricentis_com-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:18:40 AM] https://demowebshop.tricentis.com/sitemap - Mobile-Normal:
+Score: 89
+Time: Dec 30, 2025, 11:18:40 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/diagnostic-demowebshop_tricentis_com_sitemap-Mobile-Normal.png
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/audit-demowebshop_tricentis_com_sitemap-Mobile-Normal.png
+Html Report Path: demowebshop_tricentis_com_sitemap-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:18:40 AM] https://demowebshop.tricentis.com/sitemap - Desktop-Normal:
+Score: 92
+Time: Dec 30, 2025, 11:18:40 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_sitemap-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:18:40 AM] https://demowebshop.tricentis.com/sitemap - Desktop-Incognito:
+Score: 93
+Time: Dec 30, 2025, 11:18:40 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_sitemap-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:18:40 AM] https://demowebshop.tricentis.com/sitemap - Mobile-Incognito:
+Score: 88
+Time: Dec 30, 2025, 11:18:40 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_sitemap-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:18:59 AM] https://demowebshop.tricentis.com/shipping-returns - Desktop-Incognito:
+Score: 94
+Time: Dec 30, 2025, 11:18:59 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 16 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_shipping-returns-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:18:59 AM] https://demowebshop.tricentis.com/shipping-returns - Mobile-Incognito:
+Score: 90
+Time: Dec 30, 2025, 11:18:59 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_shipping-returns-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:18:59 AM] https://demowebshop.tricentis.com/shipping-returns - Desktop-Normal:
+Score: 93
+Time: Dec 30, 2025, 11:18:59 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 16 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_shipping-returns-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:18:59 AM] https://demowebshop.tricentis.com/shipping-returns - Mobile-Normal:
+Score: 89
+Time: Dec 30, 2025, 11:18:59 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/diagnostic-demowebshop_tricentis_com_shipping-returns-Mobile-Normal.png
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/audit-demowebshop_tricentis_com_shipping-returns-Mobile-Normal.png
+Html Report Path: demowebshop_tricentis_com_shipping-returns-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:19:19 AM] https://demowebshop.tricentis.com/privacy-policy - Mobile-Incognito:
+Score: 89
+Time: Dec 30, 2025, 11:19:19 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_privacy-policy-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:19:19 AM] https://demowebshop.tricentis.com/privacy-policy - Desktop-Incognito:
+Score: 95
+Time: Dec 30, 2025, 11:19:19 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 16 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_privacy-policy-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:19:19 AM] https://demowebshop.tricentis.com/privacy-policy - Desktop-Normal:
+Score: 92
+Time: Dec 30, 2025, 11:19:19 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 16 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_privacy-policy-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:19:19 AM] https://demowebshop.tricentis.com/privacy-policy - Mobile-Normal:
+Score: 89
+Time: Dec 30, 2025, 11:19:19 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/diagnostic-demowebshop_tricentis_com_privacy-policy-Mobile-Normal.png
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/audit-demowebshop_tricentis_com_privacy-policy-Mobile-Normal.png
+Html Report Path: demowebshop_tricentis_com_privacy-policy-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:19:38 AM] https://demowebshop.tricentis.com/conditions-of-use - Mobile-Normal:
+Score: 91
+Time: Dec 30, 2025, 11:19:38 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/diagnostic-demowebshop_tricentis_com_conditions-of-use-Mobile-Normal.png
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/audit-demowebshop_tricentis_com_conditions-of-use-Mobile-Normal.png
+Html Report Path: demowebshop_tricentis_com_conditions-of-use-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:19:38 AM] https://demowebshop.tricentis.com/conditions-of-use - Mobile-Incognito:
+Score: 89
+Time: Dec 30, 2025, 11:19:38 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_conditions-of-use-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:19:38 AM] https://demowebshop.tricentis.com/conditions-of-use - Desktop-Normal:
+Score: 93
+Time: Dec 30, 2025, 11:19:38 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 16 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_conditions-of-use-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:19:38 AM] https://demowebshop.tricentis.com/conditions-of-use - Desktop-Incognito:
+Score: 94
+Time: Dec 30, 2025, 11:19:38 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 16 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_conditions-of-use-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:19:58 AM] https://demowebshop.tricentis.com/about-us - Desktop-Incognito:
+Score: 94
+Time: Dec 30, 2025, 11:19:58 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 16 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_about-us-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:19:58 AM] https://demowebshop.tricentis.com/about-us - Mobile-Incognito:
+Score: 89
+Time: Dec 30, 2025, 11:19:58 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_about-us-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:19:58 AM] https://demowebshop.tricentis.com/about-us - Mobile-Normal:
+Score: 89
+Time: Dec 30, 2025, 11:19:58 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/diagnostic-demowebshop_tricentis_com_about-us-Mobile-Normal.png
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/audit-demowebshop_tricentis_com_about-us-Mobile-Normal.png
+Html Report Path: demowebshop_tricentis_com_about-us-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:19:58 AM] https://demowebshop.tricentis.com/about-us - Desktop-Normal:
+Score: 94
+Time: Dec 30, 2025, 11:19:58 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 16 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_about-us-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:20:17 AM] https://demowebshop.tricentis.com/contactus - Desktop-Incognito:
+Score: 93
+Time: Dec 30, 2025, 11:20:17 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 16 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_contactus-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:20:17 AM] https://demowebshop.tricentis.com/contactus - Desktop-Normal:
+Score: 93
+Time: Dec 30, 2025, 11:20:17 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 16 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_contactus-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:20:17 AM] https://demowebshop.tricentis.com/contactus - Mobile-Incognito:
+Score: 89
+Time: Dec 30, 2025, 11:20:17 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_contactus-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:20:17 AM] https://demowebshop.tricentis.com/contactus - Mobile-Normal:
+Score: 89
+Time: Dec 30, 2025, 11:20:17 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/diagnostic-demowebshop_tricentis_com_contactus-Mobile-Normal.png
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/audit-demowebshop_tricentis_com_contactus-Mobile-Normal.png
+Html Report Path: demowebshop_tricentis_com_contactus-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:20:36 AM] https://demowebshop.tricentis.com/wishlist - Desktop-Incognito:
+Score: 93
+Time: Dec 30, 2025, 11:20:36 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_wishlist-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:20:36 AM] https://demowebshop.tricentis.com/wishlist - Mobile-Incognito:
+Score: 91
+Time: Dec 30, 2025, 11:20:36 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_wishlist-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:20:37 AM] https://demowebshop.tricentis.com/wishlist - Desktop-Normal:
+Score: 93
+Time: Dec 30, 2025, 11:20:37 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: demowebshop_tricentis_com_wishlist-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
+
+[Dec 30, 2025, 11:20:37 AM] https://demowebshop.tricentis.com/wishlist - Mobile-Normal:
+Score: 89
+Time: Dec 30, 2025, 11:20:37 AM
+Diagnostic Title Text: Use HTTP/2
+Diagnostic Display Text: 15 requests not served via HTTP/2
+Diagnostic Redirect Text: Learn more about HTTP/2
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/diagnostic-demowebshop_tricentis_com_wishlist-Mobile-Normal.png
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM/screenshot/audit-demowebshop_tricentis_com_wishlist-Mobile-Normal.png
+Html Report Path: demowebshop_tricentis_com_wishlist-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Playwright-Typescript-Automation/Lighthouse-Playwright-Typescript-Automation/reports/lighthouse-12-30-2025-11-18-05-AM
